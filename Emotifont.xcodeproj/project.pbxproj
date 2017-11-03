@@ -1,0 +1,1830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E60080A99D096E9CB8A884E /* Pods_Emotifont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC32559C197B5561C00EDDC /* Pods_Emotifont.framework */; };
+		D16B787D7A59C6FC1305D76A /* Pods_Emotifont_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2781AEE83F8B88BD50FFED75 /* Pods_Emotifont_Keyboard.framework */; };
+		F80034961F8FFEFC00767A55 /* MainNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80034891F8FFEFA00767A55 /* MainNaviController.m */; };
+		F80034971F8FFEFC00767A55 /* TermsOfUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800348A1F8FFEFB00767A55 /* TermsOfUse.swift */; };
+		F80034981F8FFEFC00767A55 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800348B1F8FFEFB00767A55 /* AboutVC.swift */; };
+		F80034991F8FFEFC00767A55 /* LeaderboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F800348D1F8FFEFB00767A55 /* LeaderboardVC.m */; };
+		F800349A1F8FFEFC00767A55 /* EmotifontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80034901F8FFEFB00767A55 /* EmotifontViewController.swift */; };
+		F800349B1F8FFEFC00767A55 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80034921F8FFEFC00767A55 /* PrivacyVC.swift */; };
+		F800349C1F8FFEFC00767A55 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80034931F8FFEFC00767A55 /* ProfileVC.swift */; };
+		F800349D1F8FFEFC00767A55 /* PurchaseConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F80034941F8FFEFC00767A55 /* PurchaseConfirmVC.m */; };
+		F800349E1F8FFEFC00767A55 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80034951F8FFEFC00767A55 /* FirstViewController.m */; };
+		F8003B991F90026100767A55 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8003B981F90026100767A55 /* KeyboardViewController.m */; };
+		F8003B9D1F90026100767A55 /* Emotifont-Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F8003B951F90026100767A55 /* Emotifont-Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F80042991F9004C800767A55 /* FontPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042941F9004C800767A55 /* FontPickerView.m */; };
+		F800429A1F9004C800767A55 /* KeyboardInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042971F9004C800767A55 /* KeyboardInputView.m */; };
+		F800429B1F9004C800767A55 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042981F9004C800767A55 /* KeyboardView.m */; };
+		F80042A11F90050600767A55 /* MWFImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042A01F90050600767A55 /* MWFImageCropper.m */; };
+		F80042A41F90052E00767A55 /* PurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042A31F90052E00767A55 /* PurchaseController.m */; };
+		F80042AB1F90054400767A55 /* FontCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042A61F90054300767A55 /* FontCell.m */; };
+		F80042AC1F90054400767A55 /* GifCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042AA1F90054400767A55 /* GifCollectionCell.m */; };
+		F80042B51F90055C00767A55 /* GlyphPackBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042AF1F90055A00767A55 /* GlyphPackBundle.m */; };
+		F80042B61F90055C00767A55 /* Pack.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042B01F90055B00767A55 /* Pack.m */; };
+		F80042B71F90055C00767A55 /* GlyphPack.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042B21F90055B00767A55 /* GlyphPack.m */; };
+		F80042B81F90055C00767A55 /* UIColor+LYSHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042B41F90055C00767A55 /* UIColor+LYSHexColor.m */; };
+		F800495F1F90062600767A55 /* Compositor.m in Sources */ = {isa = PBXBuildFile; fileRef = F800495E1F90062500767A55 /* Compositor.m */; };
+		F8004A161F9007A400767A55 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8004A151F9007A400767A55 /* StoreKit.framework */; };
+		F8004A1A1F900DBE00767A55 /* GlyphPack.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042B21F90055B00767A55 /* GlyphPack.m */; };
+		F8004A1B1F900DBE00767A55 /* GlyphPackBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042AF1F90055A00767A55 /* GlyphPackBundle.m */; };
+		F8004A1C1F900DBE00767A55 /* Pack.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042B01F90055B00767A55 /* Pack.m */; };
+		F8389B861F90B96100C47392 /* PurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042A31F90052E00767A55 /* PurchaseController.m */; };
+		F85EA59A1F9024D40017EC5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8692DBC1F8FF5D5004E2F25 /* Main.storyboard */; };
+		F85EA59B1F9024D40017EC5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F80034A31F8FFFE200767A55 /* GoogleService-Info.plist */; };
+		F85EA59C1F9024D40017EC5F /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = F80034A41F8FFFE300767A55 /* privacy.html */; };
+		F85EA59D1F9024D40017EC5F /* tou.html in Resources */ = {isa = PBXBuildFile; fileRef = F80034A61F8FFFE300767A55 /* tou.html */; };
+		F85EA59E1F9024E00017EC5F /* ASU.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F800494E1F9005E800767A55 /* ASU.packbundle */; };
+		F85EA59F1F9024E00017EC5F /* ASU Baseball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800494F1F9005E800767A55 /* ASU Baseball.pack */; };
+		F85EA5A01F9024E00017EC5F /* ASU Basketball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049461F9005E600767A55 /* ASU Basketball.pack */; };
+		F85EA5A11F9024E00017EC5F /* ASU Campus.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492E1F9005DF00767A55 /* ASU Campus.pack */; };
+		F85EA5A21F9024E00017EC5F /* ASU Football.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049251F9005DD00767A55 /* ASU Football.pack */; };
+		F85EA5A31F9024E00017EC5F /* ASU Generic.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049271F9005DE00767A55 /* ASU Generic.pack */; };
+		F85EA5A41F9024E00017EC5F /* Angry.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492F1F9005E000767A55 /* Angry.pack */; };
+		F85EA5A51F9024E00017EC5F /* Blessed.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800494B1F9005E700767A55 /* Blessed.pack */; };
+		F85EA5A61F9024E00017EC5F /* Celebrate.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049561F9005EB00767A55 /* Celebrate.pack */; };
+		F85EA5A71F9024E00017EC5F /* Cheers.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049581F9005EC00767A55 /* Cheers.pack */; };
+		F85EA5A81F9024E00017EC5F /* Duke.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800494D1F9005E800767A55 /* Duke.pack */; };
+		F85EA5A91F9024E00017EC5F /* Falcons.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800491F1F9005DC00767A55 /* Falcons.pack */; };
+		F85EA5AA1F9024E00017EC5F /* Freaking Hilarious.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800491E1F9005DC00767A55 /* Freaking Hilarious.pack */; };
+		F85EA5AB1F9024E00017EC5F /* Go Green.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800495B1F9005ED00767A55 /* Go Green.pack */; };
+		F85EA5AC1F9024E00017EC5F /* Happy.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492A1F9005DE00767A55 /* Happy.pack */; };
+		F85EA5AD1F9024E00017EC5F /* Holiday.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F80049291F9005DE00767A55 /* Holiday.packbundle */; };
+		F85EA5AE1F9024E00017EC5F /* I Heart Music.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049511F9005E900767A55 /* I Heart Music.pack */; };
+		F85EA5AF1F9024E00017EC5F /* I'm Serious.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049431F9005E500767A55 /* I'm Serious.pack */; };
+		F85EA5B01F9024E00017EC5F /* Love.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493A1F9005E200767A55 /* Love.pack */; };
+		F85EA5B11F9024E00017EC5F /* Make It Rain.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800494A1F9005E700767A55 /* Make It Rain.pack */; };
+		F85EA5B21F9024E00017EC5F /* Make Your Own.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049391F9005E200767A55 /* Make Your Own.pack */; };
+		F85EA5B31F9024E00017EC5F /* Medical Marijuana.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049331F9005E000767A55 /* Medical Marijuana.pack */; };
+		F85EA5B41F9024E00017EC5F /* Merry.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493D1F9005E300767A55 /* Merry.pack */; };
+		F85EA5B51F9024E00017EC5F /* NC.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493B1F9005E300767A55 /* NC.pack */; };
+		F85EA5B61F9024E00017EC5F /* New Year.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492D1F9005DF00767A55 /* New Year.pack */; };
+		F85EA5B71F9024E00017EC5F /* Ohio State Academics.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049371F9005E200767A55 /* Ohio State Academics.pack */; };
+		F85EA5B81F9024E00017EC5F /* Ohio State Baseball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800495C1F9005ED00767A55 /* Ohio State Baseball.pack */; };
+		F85EA5B91F9024E00017EC5F /* Ohio State Basketball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049481F9005E600767A55 /* Ohio State Basketball.pack */; };
+		F85EA5BA1F9024E00017EC5F /* Ohio State Buckeye.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493E1F9005E400767A55 /* Ohio State Buckeye.pack */; };
+		F85EA5BB1F9024E00017EC5F /* Ohio State Campus.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493F1F9005E400767A55 /* Ohio State Campus.pack */; };
+		F85EA5BC1F9024E00017EC5F /* Ohio State Football.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049541F9005EA00767A55 /* Ohio State Football.pack */; };
+		F85EA5BD1F9024E00017EC5F /* Ohio State Golf.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049381F9005E200767A55 /* Ohio State Golf.pack */; };
+		F85EA5BE1F9024E00017EC5F /* Ohio State.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F80049551F9005EA00767A55 /* Ohio State.packbundle */; };
+		F85EA5BF1F9024E00017EC5F /* Packers.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492C1F9005DF00767A55 /* Packers.pack */; };
+		F85EA5C01F9024E00017EC5F /* Patriots.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049321F9005E000767A55 /* Patriots.pack */; };
+		F85EA5C11F9024E00017EC5F /* Peace.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049261F9005DD00767A55 /* Peace.pack */; };
+		F85EA5C21F9024E00017EC5F /* Pride.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800495A1F9005EC00767A55 /* Pride.pack */; };
+		F85EA5C31F9024E00017EC5F /* Proud.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049341F9005E100767A55 /* Proud.pack */; };
+		F85EA5C41F9024E00017EC5F /* Romance.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049441F9005E500767A55 /* Romance.pack */; };
+		F85EA5C51F9024E00017EC5F /* Sad.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049201F9005DC00767A55 /* Sad.pack */; };
+		F85EA5C61F9024E00017EC5F /* Scary.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049501F9005E900767A55 /* Scary.pack */; };
+		F85EA5C71F9024E00017EC5F /* Shalom.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049301F9005E000767A55 /* Shalom.pack */; };
+		F85EA5C81F9024E00017EC5F /* Sick.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049361F9005E100767A55 /* Sick.pack */; };
+		F85EA5C91F9024E00017EC5F /* SouthCarolina.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492B1F9005DF00767A55 /* SouthCarolina.pack */; };
+		F85EA5CA1F9024E00017EC5F /* Steelers.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049401F9005E400767A55 /* Steelers.pack */; };
+		F85EA5CB1F9024E00017EC5F /* Stressed Out.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049211F9005DC00767A55 /* Stressed Out.pack */; };
+		F85EA5CC1F9024E00017EC5F /* Syracuse.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F800494C1F9005E700767A55 /* Syracuse.packbundle */; };
+		F85EA5CD1F9024E00017EC5F /* Syracuse Basketball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049531F9005EA00767A55 /* Syracuse Basketball.pack */; };
+		F85EA5CE1F9024E00017EC5F /* Syracuse Campus.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049221F9005DD00767A55 /* Syracuse Campus.pack */; };
+		F85EA5CF1F9024E00017EC5F /* Syracuse Football.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049281F9005DE00767A55 /* Syracuse Football.pack */; };
+		F85EA5D01F9024E00017EC5F /* Syracuse Generic.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049231F9005DD00767A55 /* Syracuse Generic.pack */; };
+		F85EA5D11F9024E00017EC5F /* Text Hug.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049351F9005E100767A55 /* Text Hug.pack */; };
+		F85EA5D21F9024E00017EC5F /* Thankful.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049571F9005EB00767A55 /* Thankful.pack */; };
+		F85EA5D31F9024E00017EC5F /* Trending.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F80049451F9005E500767A55 /* Trending.packbundle */; };
+		F85EA5D41F9024E00017EC5F /* Trump.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049521F9005E900767A55 /* Trump.pack */; };
+		F85EA5D51F9024E00017EC5F /* UCLA.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049471F9005E600767A55 /* UCLA.pack */; };
+		F85EA5D61F9024E00017EC5F /* U of A.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049311F9005E000767A55 /* U of A.pack */; };
+		F85EA5D71F9024E00017EC5F /* University of Illinois.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F80049411F9005E400767A55 /* University of Illinois.packbundle */; };
+		F85EA5D81F9024E00017EC5F /* University of Illinois Basketball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049491F9005E700767A55 /* University of Illinois Basketball.pack */; };
+		F85EA5D91F9024E00017EC5F /* University of Illinois Campus.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049421F9005E500767A55 /* University of Illinois Campus.pack */; };
+		F85EA5DA1F9024E00017EC5F /* University of Illinois Football.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049241F9005DD00767A55 /* University of Illinois Football.pack */; };
+		F85EA5DB1F9024E00017EC5F /* University of Illinois Generic.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049591F9005EC00767A55 /* University of Illinois Generic.pack */; };
+		F85EA5DC1F9024E00017EC5F /* White Castle.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493C1F9005E300767A55 /* White Castle.pack */; };
+		F85EA5DD1F90256F0017EC5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8692DBF1F8FF5D5004E2F25 /* Assets.xcassets */; };
+		F85EA5DE1F90256F0017EC5F /* 1_the_fanatic_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049BC1F9006CB00767A55 /* 1_the_fanatic_305x250.gif */; };
+		F85EA5DF1F90256F0017EC5F /* 10_football_CATCHING_PASS_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049BE1F9006CB00767A55 /* 10_football_CATCHING_PASS_305x250.gif */; };
+		F85EA5E01F90256F0017EC5F /* 10_football_PUNTING_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049BF1F9006CB00767A55 /* 10_football_PUNTING_305x250.gif */; };
+		F85EA5E11F90256F0017EC5F /* 10_football_SPIKING_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049C01F9006CB00767A55 /* 10_football_SPIKING_305x250.gif */; };
+		F85EA5E21F90256F0017EC5F /* 11_1_delay_of_game_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049C21F9006CB00767A55 /* 11_1_delay_of_game_305x250txt.gif */; };
+		F85EA5E31F90256F0017EC5F /* 11_1_first_down_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049C31F9006CB00767A55 /* 11_1_first_down_305x250txt.gif */; };
+		F85EA5E41F90256F0017EC5F /* 11_1_first_down_left_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049C41F9006CB00767A55 /* 11_1_first_down_left_305x250txt.gif */; };
+		F85EA5E51F90256F0017EC5F /* 11_1_illegal_use_of_hands_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049C51F9006CB00767A55 /* 11_1_illegal_use_of_hands_305x250txt.gif */; };
+		F85EA5E61F90256F0017EC5F /* 11_1_incomplete_pass_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049C61F9006CB00767A55 /* 11_1_incomplete_pass_305x250txt.gif */; };
+		F85EA5E71F90256F0017EC5F /* 11_1_penalty_flag_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049C71F9006CB00767A55 /* 11_1_penalty_flag_305x250.gif */; };
+		F85EA5E81F90256F0017EC5F /* 11_1_time_out_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049C81F9006CB00767A55 /* 11_1_time_out_305x250txt.gif */; };
+		F85EA5E91F90256F0017EC5F /* 11_1_touchdown_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049C91F9006CB00767A55 /* 11_1_touchdown_305x250txt.gif */; };
+		F85EA5EA1F90256F0017EC5F /* 11_2_NEW_football_ref_DELAY_OF_GAME_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049CA1F9006CB00767A55 /* 11_2_NEW_football_ref_DELAY_OF_GAME_305x250.gif */; };
+		F85EA5EB1F90256F0017EC5F /* 11_2_NEW_football_ref_INCOMPLETE_PASS_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049CB1F9006CB00767A55 /* 11_2_NEW_football_ref_INCOMPLETE_PASS_305x250.gif */; };
+		F85EA5EC1F90256F0017EC5F /* 11_2_NEW_football_ref_TIME_OUT_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049CC1F9006CB00767A55 /* 11_2_NEW_football_ref_TIME_OUT_305x250.gif */; };
+		F85EA5ED1F90256F0017EC5F /* 11_2_NEW_football_ref_yellow-flag_Updated_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049CD1F9006CB00767A55 /* 11_2_NEW_football_ref_yellow-flag_Updated_305x250.gif */; };
+		F85EA5EE1F90256F0017EC5F /* 11_2_new_ref_TOUCHDOWN_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049CE1F9006CB00767A55 /* 11_2_new_ref_TOUCHDOWN_305x250.gif */; };
+		F85EA5EF1F90256F0017EC5F /* 12_soccer_corner_kick_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049D01F9006CB00767A55 /* 12_soccer_corner_kick_305x250.gif */; };
+		F85EA5F01F90256F0017EC5F /* 12_soccer_save_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049D11F9006CB00767A55 /* 12_soccer_save_305x250.gif */; };
+		F85EA5F11F90256F0017EC5F /* 13_1_Soccer_red_card_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049D31F9006CB00767A55 /* 13_1_Soccer_red_card_305x250.gif */; };
+		F85EA5F21F90256F0017EC5F /* 13_1_Soccer_yellow_card_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049D41F9006CB00767A55 /* 13_1_Soccer_yellow_card_305x250.gif */; };
+		F85EA5F31F90256F0017EC5F /* 13_2_NEW_soccer_red_card_Updated_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049D51F9006CB00767A55 /* 13_2_NEW_soccer_red_card_Updated_305x250.gif */; };
+		F85EA5F41F90256F0017EC5F /* 13_2_NEW_soccer_yellow_card_Updated_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049D61F9006CB00767A55 /* 13_2_NEW_soccer_yellow_card_Updated_305x250.gif */; };
+		F85EA5F51F90256F0017EC5F /* 14_baseball_home_run_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049D81F9006CB00767A55 /* 14_baseball_home_run_305x250.gif */; };
+		F85EA5F61F90256F0017EC5F /* 15_baseball_official_OUT_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049DA1F9006CB00767A55 /* 15_baseball_official_OUT_305x250txt.gif */; };
+		F85EA5F71F90256F0017EC5F /* 15_Baseball_official_Strike_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049DB1F9006CB00767A55 /* 15_Baseball_official_Strike_305x250txt.gif */; };
+		F85EA5F81F90256F0017EC5F /* 15_Baseball_safe_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049DC1F9006CB00767A55 /* 15_Baseball_safe_305x250txt.gif */; };
+		F85EA5F91F90256F0017EC5F /* 16_hockey_slap_shot_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049DE1F9006CB00767A55 /* 16_hockey_slap_shot_305x250.gif */; };
+		F85EA5FA1F90256F0017EC5F /* 17_Hockey_official_PENALTY_SHOT_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049E01F9006CB00767A55 /* 17_Hockey_official_PENALTY_SHOT_305x250txt.gif */; };
+		F85EA5FB1F90256F0017EC5F /* 17_Hockey_official_UNSPORTSMANLIKE_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049E11F9006CB00767A55 /* 17_Hockey_official_UNSPORTSMANLIKE_305x250txt.gif */; };
+		F85EA5FC1F90256F0017EC5F /* 18_golf_shank_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049E31F9006CB00767A55 /* 18_golf_shank_305x250.gif */; };
+		F85EA5FD1F90256F0017EC5F /* 19_lacrosse_goal_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049E51F9006CB00767A55 /* 19_lacrosse_goal_305x250.gif */; };
+		F85EA5FE1F9025700017EC5F /* 2_1_wine_toast_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049E71F9006CB00767A55 /* 2_1_wine_toast_305x250.gif */; };
+		F85EA5FF1F9025700017EC5F /* 2_Beer_cheers_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049E81F9006CB00767A55 /* 2_Beer_cheers_305x250.gif */; };
+		F85EA6001F9025700017EC5F /* 20_skiing_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049EA1F9006CB00767A55 /* 20_skiing_305x250.gif */; };
+		F85EA6011F9025700017EC5F /* 21_middle_finger_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049EC1F9006CB00767A55 /* 21_middle_finger_305x250.gif */; };
+		F85EA6021F9025700017EC5F /* 21_middle_finger_female_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049ED1F9006CB00767A55 /* 21_middle_finger_female_305x250.gif */; };
+		F85EA6031F9025700017EC5F /* 22_rock_n_roll_hand_symbol_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049EF1F9006CB00767A55 /* 22_rock_n_roll_hand_symbol_305x250.gif */; };
+		F85EA6041F9025700017EC5F /* 23_1_applause_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049F11F9006CB00767A55 /* 23_1_applause_305x250.gif */; };
+		F85EA6051F9025700017EC5F /* 23_2_applause_slower_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049F21F9006CB00767A55 /* 23_2_applause_slower_305x250.gif */; };
+		F85EA6061F9025700017EC5F /* 24_bicep_curl_and_chest_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049F41F9006CB00767A55 /* 24_bicep_curl_and_chest_305x250.gif */; };
+		F85EA6071F9025700017EC5F /* 25_champagne_cork_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049F61F9006CB00767A55 /* 25_champagne_cork_305x250.gif */; };
+		F85EA6081F9025700017EC5F /* 26_namaste_with_text_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049F81F9006CB00767A55 /* 26_namaste_with_text_305x250.gif */; };
+		F85EA6091F9025700017EC5F /* 27_woman_lifting_shopping_bags_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049FA1F9006CB00767A55 /* 27_woman_lifting_shopping_bags_305x250.gif */; };
+		F85EA60A1F9025700017EC5F /* 28_rock_n_roll_guitar_player_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049FC1F9006CB00767A55 /* 28_rock_n_roll_guitar_player_305x250.gif */; };
+		F85EA60B1F9025700017EC5F /* 29_angry_face_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80049FE1F9006CB00767A55 /* 29_angry_face_305x250.gif */; };
+		F85EA60C1F9025700017EC5F /* 3_Brutus_beating_head_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A001F9006CB00767A55 /* 3_Brutus_beating_head_305x250.gif */; };
+		F85EA60D1F9025700017EC5F /* 3_Brutus_Touchdown_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A011F9006CB00767A55 /* 3_Brutus_Touchdown_305x250.gif */; };
+		F85EA60E1F9025700017EC5F /* 30_knuckles_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A031F9006CB00767A55 /* 30_knuckles_305x250.gif */; };
+		F85EA60F1F9025700017EC5F /* 4_woman_drawing_guns_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A051F9006CB00767A55 /* 4_woman_drawing_guns_305x250.gif */; };
+		F85EA6101F9025700017EC5F /* 5_Neil_Sika_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A071F9006CB00767A55 /* 5_Neil_Sika_305x250.gif */; };
+		F85EA6111F9025700017EC5F /* 6_iwo_jima_flag_raising_newmountain_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A091F9006CB00767A55 /* 6_iwo_jima_flag_raising_newmountain_305x250.gif */; };
+		F85EA6121F9025700017EC5F /* 7_person_smoking_joint_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A0B1F9006CB00767A55 /* 7_person_smoking_joint_305x250.gif */; };
+		F85EA6131F9025700017EC5F /* 8_basketball_3_point_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A0D1F9006CB00767A55 /* 8_basketball_3_point_305x250.gif */; };
+		F85EA6141F9025700017EC5F /* 8_basketball_dunk_2_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A0E1F9006CB00767A55 /* 8_basketball_dunk_2_305x250.gif */; };
+		F85EA6151F9025700017EC5F /* 9_basketball_official_FOUL_305x250txt.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A101F9006CB00767A55 /* 9_basketball_official_FOUL_305x250txt.gif */; };
+		F85EA6161F9025700017EC5F /* 9_NEW_basketball_foul_305x250.gif in Resources */ = {isa = PBXBuildFile; fileRef = F8004A111F9006CB00767A55 /* 9_NEW_basketball_foul_305x250.gif */; };
+		F85EA6171F9025700017EC5F /* ASU.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F800494E1F9005E800767A55 /* ASU.packbundle */; };
+		F85EA6181F9025700017EC5F /* ASU Baseball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800494F1F9005E800767A55 /* ASU Baseball.pack */; };
+		F85EA6191F9025700017EC5F /* ASU Basketball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049461F9005E600767A55 /* ASU Basketball.pack */; };
+		F85EA61A1F9025700017EC5F /* ASU Campus.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492E1F9005DF00767A55 /* ASU Campus.pack */; };
+		F85EA61B1F9025700017EC5F /* ASU Football.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049251F9005DD00767A55 /* ASU Football.pack */; };
+		F85EA61C1F9025700017EC5F /* ASU Generic.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049271F9005DE00767A55 /* ASU Generic.pack */; };
+		F85EA61D1F9025700017EC5F /* Angry.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492F1F9005E000767A55 /* Angry.pack */; };
+		F85EA61E1F9025700017EC5F /* Blessed.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800494B1F9005E700767A55 /* Blessed.pack */; };
+		F85EA61F1F9025700017EC5F /* Celebrate.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049561F9005EB00767A55 /* Celebrate.pack */; };
+		F85EA6201F9025700017EC5F /* Cheers.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049581F9005EC00767A55 /* Cheers.pack */; };
+		F85EA6211F9025700017EC5F /* Duke.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800494D1F9005E800767A55 /* Duke.pack */; };
+		F85EA6221F9025700017EC5F /* Falcons.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800491F1F9005DC00767A55 /* Falcons.pack */; };
+		F85EA6231F9025700017EC5F /* Freaking Hilarious.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800491E1F9005DC00767A55 /* Freaking Hilarious.pack */; };
+		F85EA6241F9025700017EC5F /* Go Green.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800495B1F9005ED00767A55 /* Go Green.pack */; };
+		F85EA6251F9025700017EC5F /* Happy.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492A1F9005DE00767A55 /* Happy.pack */; };
+		F85EA6261F9025700017EC5F /* Holiday.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F80049291F9005DE00767A55 /* Holiday.packbundle */; };
+		F85EA6271F9025700017EC5F /* I Heart Music.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049511F9005E900767A55 /* I Heart Music.pack */; };
+		F85EA6281F9025700017EC5F /* I'm Serious.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049431F9005E500767A55 /* I'm Serious.pack */; };
+		F85EA6291F9025700017EC5F /* Love.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493A1F9005E200767A55 /* Love.pack */; };
+		F85EA62A1F9025700017EC5F /* Make It Rain.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800494A1F9005E700767A55 /* Make It Rain.pack */; };
+		F85EA62B1F9025700017EC5F /* Make Your Own.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049391F9005E200767A55 /* Make Your Own.pack */; };
+		F85EA62C1F9025700017EC5F /* Medical Marijuana.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049331F9005E000767A55 /* Medical Marijuana.pack */; };
+		F85EA62D1F9025700017EC5F /* Merry.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493D1F9005E300767A55 /* Merry.pack */; };
+		F85EA62E1F9025700017EC5F /* NC.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493B1F9005E300767A55 /* NC.pack */; };
+		F85EA62F1F9025700017EC5F /* New Year.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492D1F9005DF00767A55 /* New Year.pack */; };
+		F85EA6301F9025700017EC5F /* Ohio State Academics.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049371F9005E200767A55 /* Ohio State Academics.pack */; };
+		F85EA6311F9025700017EC5F /* Ohio State Baseball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800495C1F9005ED00767A55 /* Ohio State Baseball.pack */; };
+		F85EA6321F9025700017EC5F /* Ohio State Basketball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049481F9005E600767A55 /* Ohio State Basketball.pack */; };
+		F85EA6331F9025700017EC5F /* Ohio State Buckeye.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493E1F9005E400767A55 /* Ohio State Buckeye.pack */; };
+		F85EA6341F9025700017EC5F /* Ohio State Campus.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493F1F9005E400767A55 /* Ohio State Campus.pack */; };
+		F85EA6351F9025700017EC5F /* Ohio State Football.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049541F9005EA00767A55 /* Ohio State Football.pack */; };
+		F85EA6361F9025700017EC5F /* Ohio State Golf.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049381F9005E200767A55 /* Ohio State Golf.pack */; };
+		F85EA6371F9025700017EC5F /* Ohio State.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F80049551F9005EA00767A55 /* Ohio State.packbundle */; };
+		F85EA6381F9025700017EC5F /* Packers.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492C1F9005DF00767A55 /* Packers.pack */; };
+		F85EA6391F9025700017EC5F /* Patriots.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049321F9005E000767A55 /* Patriots.pack */; };
+		F85EA63A1F9025700017EC5F /* Peace.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049261F9005DD00767A55 /* Peace.pack */; };
+		F85EA63B1F9025700017EC5F /* Pride.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800495A1F9005EC00767A55 /* Pride.pack */; };
+		F85EA63C1F9025700017EC5F /* Proud.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049341F9005E100767A55 /* Proud.pack */; };
+		F85EA63D1F9025700017EC5F /* Romance.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049441F9005E500767A55 /* Romance.pack */; };
+		F85EA63E1F9025700017EC5F /* Sad.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049201F9005DC00767A55 /* Sad.pack */; };
+		F85EA63F1F9025700017EC5F /* Scary.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049501F9005E900767A55 /* Scary.pack */; };
+		F85EA6401F9025700017EC5F /* Shalom.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049301F9005E000767A55 /* Shalom.pack */; };
+		F85EA6411F9025700017EC5F /* Sick.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049361F9005E100767A55 /* Sick.pack */; };
+		F85EA6421F9025700017EC5F /* SouthCarolina.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800492B1F9005DF00767A55 /* SouthCarolina.pack */; };
+		F85EA6431F9025700017EC5F /* Steelers.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049401F9005E400767A55 /* Steelers.pack */; };
+		F85EA6441F9025700017EC5F /* Stressed Out.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049211F9005DC00767A55 /* Stressed Out.pack */; };
+		F85EA6451F9025700017EC5F /* Syracuse.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F800494C1F9005E700767A55 /* Syracuse.packbundle */; };
+		F85EA6461F9025700017EC5F /* Syracuse Basketball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049531F9005EA00767A55 /* Syracuse Basketball.pack */; };
+		F85EA6471F9025700017EC5F /* Syracuse Campus.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049221F9005DD00767A55 /* Syracuse Campus.pack */; };
+		F85EA6481F9025700017EC5F /* Syracuse Football.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049281F9005DE00767A55 /* Syracuse Football.pack */; };
+		F85EA6491F9025700017EC5F /* Syracuse Generic.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049231F9005DD00767A55 /* Syracuse Generic.pack */; };
+		F85EA64A1F9025700017EC5F /* Text Hug.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049351F9005E100767A55 /* Text Hug.pack */; };
+		F85EA64B1F9025700017EC5F /* Thankful.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049571F9005EB00767A55 /* Thankful.pack */; };
+		F85EA64C1F9025700017EC5F /* Trending.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F80049451F9005E500767A55 /* Trending.packbundle */; };
+		F85EA64D1F9025700017EC5F /* Trump.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049521F9005E900767A55 /* Trump.pack */; };
+		F85EA64E1F9025700017EC5F /* UCLA.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049471F9005E600767A55 /* UCLA.pack */; };
+		F85EA64F1F9025700017EC5F /* U of A.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049311F9005E000767A55 /* U of A.pack */; };
+		F85EA6501F9025700017EC5F /* University of Illinois.packbundle in Resources */ = {isa = PBXBuildFile; fileRef = F80049411F9005E400767A55 /* University of Illinois.packbundle */; };
+		F85EA6511F9025700017EC5F /* University of Illinois Basketball.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049491F9005E700767A55 /* University of Illinois Basketball.pack */; };
+		F85EA6521F9025700017EC5F /* University of Illinois Campus.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049421F9005E500767A55 /* University of Illinois Campus.pack */; };
+		F85EA6531F9025700017EC5F /* University of Illinois Football.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049241F9005DD00767A55 /* University of Illinois Football.pack */; };
+		F85EA6541F9025700017EC5F /* University of Illinois Generic.pack in Resources */ = {isa = PBXBuildFile; fileRef = F80049591F9005EC00767A55 /* University of Illinois Generic.pack */; };
+		F85EA6551F9025700017EC5F /* White Castle.pack in Resources */ = {isa = PBXBuildFile; fileRef = F800493C1F9005E300767A55 /* White Castle.pack */; };
+		F85EA6561F9025700017EC5F /* FontPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F800429D1F9004EA00767A55 /* FontPickerView.xib */; };
+		F85EA6571F9025700017EC5F /* KeyboardInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F800429C1F9004EA00767A55 /* KeyboardInputView.xib */; };
+		F85EA6581F9025700017EC5F /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F800429E1F9004EB00767A55 /* KeyboardView.xib */; };
+		F85EA6591F9025A00017EC5F /* FontCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80042A81F90054300767A55 /* FontCell.xib */; };
+		F85EA65A1F9025A00017EC5F /* GifCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80042A51F90054300767A55 /* GifCollectionCell.xib */; };
+		F85EA65B1F9025A00017EC5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8004A121F90073600767A55 /* GoogleService-Info.plist */; };
+		F8692DB81F8FF5D5004E2F25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8692DB71F8FF5D5004E2F25 /* AppDelegate.m */; };
+		F8692DC01F8FF5D5004E2F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8692DBF1F8FF5D5004E2F25 /* Assets.xcassets */; };
+		F8692DC61F8FF5D5004E2F25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8692DC51F8FF5D5004E2F25 /* main.m */; };
+		F8FCF4C11F90B205004AB8EC /* UIColor+LYSHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042B41F90055C00767A55 /* UIColor+LYSHexColor.m */; };
+		F8FCF4C21F90B205004AB8EC /* MWFImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = F80042A01F90050600767A55 /* MWFImageCropper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8003B9B1F90026100767A55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8692DAB1F8FF5D5004E2F25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8003B941F90026100767A55;
+			remoteInfo = "Emotifont-Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F80034871F8FFB2500767A55 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F8003B9D1F90026100767A55 /* Emotifont-Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2781AEE83F8B88BD50FFED75 /* Pods_Emotifont_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emotifont_Keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDAD91DBAC0EF17A1DAC395 /* Pods-Emotifont-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotifont-Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emotifont-Keyboard/Pods-Emotifont-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		8A8D24E949A0B868F7702DA5 /* Pods-Emotifont-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotifont-Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emotifont-Keyboard/Pods-Emotifont-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		BBC257735F1597ADE15430A2 /* Pods-Emotifont.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotifont.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emotifont/Pods-Emotifont.debug.xcconfig"; sourceTree = "<group>"; };
+		E51FD8F78D5F6D97D1979C22 /* Pods-Emotifont.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotifont.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emotifont/Pods-Emotifont.release.xcconfig"; sourceTree = "<group>"; };
+		F80034881F8FFEFA00767A55 /* Emotifont-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Emotifont-Bridging-Header.h"; sourceTree = "<group>"; };
+		F80034891F8FFEFA00767A55 /* MainNaviController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNaviController.m; sourceTree = "<group>"; };
+		F800348A1F8FFEFB00767A55 /* TermsOfUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUse.swift; sourceTree = "<group>"; };
+		F800348B1F8FFEFB00767A55 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		F800348C1F8FFEFB00767A55 /* PurchaseConfirmVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchaseConfirmVC.h; sourceTree = "<group>"; };
+		F800348D1F8FFEFB00767A55 /* LeaderboardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaderboardVC.m; sourceTree = "<group>"; };
+		F800348E1F8FFEFB00767A55 /* MainNaviController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNaviController.h; sourceTree = "<group>"; };
+		F800348F1F8FFEFB00767A55 /* LeaderboardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeaderboardVC.h; sourceTree = "<group>"; };
+		F80034901F8FFEFB00767A55 /* EmotifontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotifontViewController.swift; sourceTree = "<group>"; };
+		F80034911F8FFEFC00767A55 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F80034921F8FFEFC00767A55 /* PrivacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
+		F80034931F8FFEFC00767A55 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F80034941F8FFEFC00767A55 /* PurchaseConfirmVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseConfirmVC.m; sourceTree = "<group>"; };
+		F80034951F8FFEFC00767A55 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F80034A31F8FFFE200767A55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F80034A41F8FFFE300767A55 /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
+		F80034A51F8FFFE300767A55 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		F80034A61F8FFFE300767A55 /* tou.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = tou.html; sourceTree = "<group>"; };
+		F8003B951F90026100767A55 /* Emotifont-Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Emotifont-Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8003B971F90026100767A55 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		F8003B981F90026100767A55 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		F8003B9A1F90026100767A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80042931F9004C700767A55 /* KeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		F80042941F9004C800767A55 /* FontPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontPickerView.m; sourceTree = "<group>"; };
+		F80042951F9004C800767A55 /* KeyboardInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardInputView.h; sourceTree = "<group>"; };
+		F80042961F9004C800767A55 /* FontPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontPickerView.h; sourceTree = "<group>"; };
+		F80042971F9004C800767A55 /* KeyboardInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardInputView.m; sourceTree = "<group>"; };
+		F80042981F9004C800767A55 /* KeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
+		F800429C1F9004EA00767A55 /* KeyboardInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardInputView.xib; sourceTree = "<group>"; };
+		F800429D1F9004EA00767A55 /* FontPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontPickerView.xib; sourceTree = "<group>"; };
+		F800429E1F9004EB00767A55 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		F800429F1F90050600767A55 /* MWFImageCropper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWFImageCropper.h; sourceTree = "<group>"; };
+		F80042A01F90050600767A55 /* MWFImageCropper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWFImageCropper.m; sourceTree = "<group>"; };
+		F80042A21F90052E00767A55 /* PurchaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurchaseController.h; sourceTree = "<group>"; };
+		F80042A31F90052E00767A55 /* PurchaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseController.m; sourceTree = "<group>"; };
+		F80042A51F90054300767A55 /* GifCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifCollectionCell.xib; sourceTree = "<group>"; };
+		F80042A61F90054300767A55 /* FontCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontCell.m; sourceTree = "<group>"; };
+		F80042A71F90054300767A55 /* FontCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontCell.h; sourceTree = "<group>"; };
+		F80042A81F90054300767A55 /* FontCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontCell.xib; sourceTree = "<group>"; };
+		F80042A91F90054400767A55 /* GifCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifCollectionCell.h; sourceTree = "<group>"; };
+		F80042AA1F90054400767A55 /* GifCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifCollectionCell.m; sourceTree = "<group>"; };
+		F80042AD1F90055A00767A55 /* UIColor+LYSHexColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LYSHexColor.h"; sourceTree = "<group>"; };
+		F80042AE1F90055A00767A55 /* Pack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pack.h; sourceTree = "<group>"; };
+		F80042AF1F90055A00767A55 /* GlyphPackBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlyphPackBundle.m; sourceTree = "<group>"; };
+		F80042B01F90055B00767A55 /* Pack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pack.m; sourceTree = "<group>"; };
+		F80042B11F90055B00767A55 /* GlyphPackBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlyphPackBundle.h; sourceTree = "<group>"; };
+		F80042B21F90055B00767A55 /* GlyphPack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlyphPack.m; sourceTree = "<group>"; };
+		F80042B31F90055C00767A55 /* GlyphPack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlyphPack.h; sourceTree = "<group>"; };
+		F80042B41F90055C00767A55 /* UIColor+LYSHexColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LYSHexColor.m"; sourceTree = "<group>"; };
+		F800491E1F9005DC00767A55 /* Freaking Hilarious.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Freaking Hilarious.pack"; sourceTree = "<group>"; };
+		F800491F1F9005DC00767A55 /* Falcons.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Falcons.pack; sourceTree = "<group>"; };
+		F80049201F9005DC00767A55 /* Sad.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sad.pack; sourceTree = "<group>"; };
+		F80049211F9005DC00767A55 /* Stressed Out.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Stressed Out.pack"; sourceTree = "<group>"; };
+		F80049221F9005DD00767A55 /* Syracuse Campus.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syracuse Campus.pack"; sourceTree = "<group>"; };
+		F80049231F9005DD00767A55 /* Syracuse Generic.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syracuse Generic.pack"; sourceTree = "<group>"; };
+		F80049241F9005DD00767A55 /* University of Illinois Football.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "University of Illinois Football.pack"; sourceTree = "<group>"; };
+		F80049251F9005DD00767A55 /* ASU Football.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ASU Football.pack"; sourceTree = "<group>"; };
+		F80049261F9005DD00767A55 /* Peace.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Peace.pack; sourceTree = "<group>"; };
+		F80049271F9005DE00767A55 /* ASU Generic.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ASU Generic.pack"; sourceTree = "<group>"; };
+		F80049281F9005DE00767A55 /* Syracuse Football.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syracuse Football.pack"; sourceTree = "<group>"; };
+		F80049291F9005DE00767A55 /* Holiday.packbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = Holiday.packbundle; sourceTree = "<group>"; };
+		F800492A1F9005DE00767A55 /* Happy.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Happy.pack; sourceTree = "<group>"; };
+		F800492B1F9005DF00767A55 /* SouthCarolina.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = SouthCarolina.pack; sourceTree = "<group>"; };
+		F800492C1F9005DF00767A55 /* Packers.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Packers.pack; sourceTree = "<group>"; };
+		F800492D1F9005DF00767A55 /* New Year.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New Year.pack"; sourceTree = "<group>"; };
+		F800492E1F9005DF00767A55 /* ASU Campus.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ASU Campus.pack"; sourceTree = "<group>"; };
+		F800492F1F9005E000767A55 /* Angry.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Angry.pack; sourceTree = "<group>"; };
+		F80049301F9005E000767A55 /* Shalom.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shalom.pack; sourceTree = "<group>"; };
+		F80049311F9005E000767A55 /* U of A.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "U of A.pack"; sourceTree = "<group>"; };
+		F80049321F9005E000767A55 /* Patriots.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Patriots.pack; sourceTree = "<group>"; };
+		F80049331F9005E000767A55 /* Medical Marijuana.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Medical Marijuana.pack"; sourceTree = "<group>"; };
+		F80049341F9005E100767A55 /* Proud.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Proud.pack; sourceTree = "<group>"; };
+		F80049351F9005E100767A55 /* Text Hug.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Text Hug.pack"; sourceTree = "<group>"; };
+		F80049361F9005E100767A55 /* Sick.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sick.pack; sourceTree = "<group>"; };
+		F80049371F9005E200767A55 /* Ohio State Academics.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ohio State Academics.pack"; sourceTree = "<group>"; };
+		F80049381F9005E200767A55 /* Ohio State Golf.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ohio State Golf.pack"; sourceTree = "<group>"; };
+		F80049391F9005E200767A55 /* Make Your Own.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Make Your Own.pack"; sourceTree = "<group>"; };
+		F800493A1F9005E200767A55 /* Love.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Love.pack; sourceTree = "<group>"; };
+		F800493B1F9005E300767A55 /* NC.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = NC.pack; sourceTree = "<group>"; };
+		F800493C1F9005E300767A55 /* White Castle.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "White Castle.pack"; sourceTree = "<group>"; };
+		F800493D1F9005E300767A55 /* Merry.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Merry.pack; sourceTree = "<group>"; };
+		F800493E1F9005E400767A55 /* Ohio State Buckeye.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ohio State Buckeye.pack"; sourceTree = "<group>"; };
+		F800493F1F9005E400767A55 /* Ohio State Campus.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ohio State Campus.pack"; sourceTree = "<group>"; };
+		F80049401F9005E400767A55 /* Steelers.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Steelers.pack; sourceTree = "<group>"; };
+		F80049411F9005E400767A55 /* University of Illinois.packbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = "University of Illinois.packbundle"; sourceTree = "<group>"; };
+		F80049421F9005E500767A55 /* University of Illinois Campus.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "University of Illinois Campus.pack"; sourceTree = "<group>"; };
+		F80049431F9005E500767A55 /* I'm Serious.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "I'm Serious.pack"; sourceTree = "<group>"; };
+		F80049441F9005E500767A55 /* Romance.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Romance.pack; sourceTree = "<group>"; };
+		F80049451F9005E500767A55 /* Trending.packbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trending.packbundle; sourceTree = "<group>"; };
+		F80049461F9005E600767A55 /* ASU Basketball.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ASU Basketball.pack"; sourceTree = "<group>"; };
+		F80049471F9005E600767A55 /* UCLA.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = UCLA.pack; sourceTree = "<group>"; };
+		F80049481F9005E600767A55 /* Ohio State Basketball.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ohio State Basketball.pack"; sourceTree = "<group>"; };
+		F80049491F9005E700767A55 /* University of Illinois Basketball.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "University of Illinois Basketball.pack"; sourceTree = "<group>"; };
+		F800494A1F9005E700767A55 /* Make It Rain.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Make It Rain.pack"; sourceTree = "<group>"; };
+		F800494B1F9005E700767A55 /* Blessed.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blessed.pack; sourceTree = "<group>"; };
+		F800494C1F9005E700767A55 /* Syracuse.packbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = Syracuse.packbundle; sourceTree = "<group>"; };
+		F800494D1F9005E800767A55 /* Duke.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Duke.pack; sourceTree = "<group>"; };
+		F800494E1F9005E800767A55 /* ASU.packbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = ASU.packbundle; sourceTree = "<group>"; };
+		F800494F1F9005E800767A55 /* ASU Baseball.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ASU Baseball.pack"; sourceTree = "<group>"; };
+		F80049501F9005E900767A55 /* Scary.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Scary.pack; sourceTree = "<group>"; };
+		F80049511F9005E900767A55 /* I Heart Music.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "I Heart Music.pack"; sourceTree = "<group>"; };
+		F80049521F9005E900767A55 /* Trump.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trump.pack; sourceTree = "<group>"; };
+		F80049531F9005EA00767A55 /* Syracuse Basketball.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syracuse Basketball.pack"; sourceTree = "<group>"; };
+		F80049541F9005EA00767A55 /* Ohio State Football.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ohio State Football.pack"; sourceTree = "<group>"; };
+		F80049551F9005EA00767A55 /* Ohio State.packbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ohio State.packbundle"; sourceTree = "<group>"; };
+		F80049561F9005EB00767A55 /* Celebrate.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Celebrate.pack; sourceTree = "<group>"; };
+		F80049571F9005EB00767A55 /* Thankful.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thankful.pack; sourceTree = "<group>"; };
+		F80049581F9005EC00767A55 /* Cheers.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cheers.pack; sourceTree = "<group>"; };
+		F80049591F9005EC00767A55 /* University of Illinois Generic.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "University of Illinois Generic.pack"; sourceTree = "<group>"; };
+		F800495A1F9005EC00767A55 /* Pride.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pride.pack; sourceTree = "<group>"; };
+		F800495B1F9005ED00767A55 /* Go Green.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Go Green.pack"; sourceTree = "<group>"; };
+		F800495C1F9005ED00767A55 /* Ohio State Baseball.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ohio State Baseball.pack"; sourceTree = "<group>"; };
+		F800495D1F90062500767A55 /* Compositor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Compositor.h; sourceTree = "<group>"; };
+		F800495E1F90062500767A55 /* Compositor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Compositor.m; sourceTree = "<group>"; };
+		F80049601F90063B00767A55 /* Emotifont-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Emotifont-Prefix.pch"; sourceTree = "<group>"; };
+		F80049BC1F9006CB00767A55 /* 1_the_fanatic_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1_the_fanatic_305x250.gif; sourceTree = "<group>"; };
+		F80049BE1F9006CB00767A55 /* 10_football_CATCHING_PASS_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10_football_CATCHING_PASS_305x250.gif; sourceTree = "<group>"; };
+		F80049BF1F9006CB00767A55 /* 10_football_PUNTING_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10_football_PUNTING_305x250.gif; sourceTree = "<group>"; };
+		F80049C01F9006CB00767A55 /* 10_football_SPIKING_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10_football_SPIKING_305x250.gif; sourceTree = "<group>"; };
+		F80049C21F9006CB00767A55 /* 11_1_delay_of_game_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_1_delay_of_game_305x250txt.gif; sourceTree = "<group>"; };
+		F80049C31F9006CB00767A55 /* 11_1_first_down_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_1_first_down_305x250txt.gif; sourceTree = "<group>"; };
+		F80049C41F9006CB00767A55 /* 11_1_first_down_left_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_1_first_down_left_305x250txt.gif; sourceTree = "<group>"; };
+		F80049C51F9006CB00767A55 /* 11_1_illegal_use_of_hands_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_1_illegal_use_of_hands_305x250txt.gif; sourceTree = "<group>"; };
+		F80049C61F9006CB00767A55 /* 11_1_incomplete_pass_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_1_incomplete_pass_305x250txt.gif; sourceTree = "<group>"; };
+		F80049C71F9006CB00767A55 /* 11_1_penalty_flag_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_1_penalty_flag_305x250.gif; sourceTree = "<group>"; };
+		F80049C81F9006CB00767A55 /* 11_1_time_out_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_1_time_out_305x250txt.gif; sourceTree = "<group>"; };
+		F80049C91F9006CB00767A55 /* 11_1_touchdown_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_1_touchdown_305x250txt.gif; sourceTree = "<group>"; };
+		F80049CA1F9006CB00767A55 /* 11_2_NEW_football_ref_DELAY_OF_GAME_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_2_NEW_football_ref_DELAY_OF_GAME_305x250.gif; sourceTree = "<group>"; };
+		F80049CB1F9006CB00767A55 /* 11_2_NEW_football_ref_INCOMPLETE_PASS_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_2_NEW_football_ref_INCOMPLETE_PASS_305x250.gif; sourceTree = "<group>"; };
+		F80049CC1F9006CB00767A55 /* 11_2_NEW_football_ref_TIME_OUT_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_2_NEW_football_ref_TIME_OUT_305x250.gif; sourceTree = "<group>"; };
+		F80049CD1F9006CB00767A55 /* 11_2_NEW_football_ref_yellow-flag_Updated_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "11_2_NEW_football_ref_yellow-flag_Updated_305x250.gif"; sourceTree = "<group>"; };
+		F80049CE1F9006CB00767A55 /* 11_2_new_ref_TOUCHDOWN_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 11_2_new_ref_TOUCHDOWN_305x250.gif; sourceTree = "<group>"; };
+		F80049D01F9006CB00767A55 /* 12_soccer_corner_kick_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 12_soccer_corner_kick_305x250.gif; sourceTree = "<group>"; };
+		F80049D11F9006CB00767A55 /* 12_soccer_save_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 12_soccer_save_305x250.gif; sourceTree = "<group>"; };
+		F80049D31F9006CB00767A55 /* 13_1_Soccer_red_card_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 13_1_Soccer_red_card_305x250.gif; sourceTree = "<group>"; };
+		F80049D41F9006CB00767A55 /* 13_1_Soccer_yellow_card_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 13_1_Soccer_yellow_card_305x250.gif; sourceTree = "<group>"; };
+		F80049D51F9006CB00767A55 /* 13_2_NEW_soccer_red_card_Updated_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 13_2_NEW_soccer_red_card_Updated_305x250.gif; sourceTree = "<group>"; };
+		F80049D61F9006CB00767A55 /* 13_2_NEW_soccer_yellow_card_Updated_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 13_2_NEW_soccer_yellow_card_Updated_305x250.gif; sourceTree = "<group>"; };
+		F80049D81F9006CB00767A55 /* 14_baseball_home_run_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 14_baseball_home_run_305x250.gif; sourceTree = "<group>"; };
+		F80049DA1F9006CB00767A55 /* 15_baseball_official_OUT_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 15_baseball_official_OUT_305x250txt.gif; sourceTree = "<group>"; };
+		F80049DB1F9006CB00767A55 /* 15_Baseball_official_Strike_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 15_Baseball_official_Strike_305x250txt.gif; sourceTree = "<group>"; };
+		F80049DC1F9006CB00767A55 /* 15_Baseball_safe_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 15_Baseball_safe_305x250txt.gif; sourceTree = "<group>"; };
+		F80049DE1F9006CB00767A55 /* 16_hockey_slap_shot_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 16_hockey_slap_shot_305x250.gif; sourceTree = "<group>"; };
+		F80049E01F9006CB00767A55 /* 17_Hockey_official_PENALTY_SHOT_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 17_Hockey_official_PENALTY_SHOT_305x250txt.gif; sourceTree = "<group>"; };
+		F80049E11F9006CB00767A55 /* 17_Hockey_official_UNSPORTSMANLIKE_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 17_Hockey_official_UNSPORTSMANLIKE_305x250txt.gif; sourceTree = "<group>"; };
+		F80049E31F9006CB00767A55 /* 18_golf_shank_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 18_golf_shank_305x250.gif; sourceTree = "<group>"; };
+		F80049E51F9006CB00767A55 /* 19_lacrosse_goal_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 19_lacrosse_goal_305x250.gif; sourceTree = "<group>"; };
+		F80049E71F9006CB00767A55 /* 2_1_wine_toast_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2_1_wine_toast_305x250.gif; sourceTree = "<group>"; };
+		F80049E81F9006CB00767A55 /* 2_Beer_cheers_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2_Beer_cheers_305x250.gif; sourceTree = "<group>"; };
+		F80049EA1F9006CB00767A55 /* 20_skiing_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 20_skiing_305x250.gif; sourceTree = "<group>"; };
+		F80049EC1F9006CB00767A55 /* 21_middle_finger_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 21_middle_finger_305x250.gif; sourceTree = "<group>"; };
+		F80049ED1F9006CB00767A55 /* 21_middle_finger_female_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 21_middle_finger_female_305x250.gif; sourceTree = "<group>"; };
+		F80049EF1F9006CB00767A55 /* 22_rock_n_roll_hand_symbol_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 22_rock_n_roll_hand_symbol_305x250.gif; sourceTree = "<group>"; };
+		F80049F11F9006CB00767A55 /* 23_1_applause_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 23_1_applause_305x250.gif; sourceTree = "<group>"; };
+		F80049F21F9006CB00767A55 /* 23_2_applause_slower_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 23_2_applause_slower_305x250.gif; sourceTree = "<group>"; };
+		F80049F41F9006CB00767A55 /* 24_bicep_curl_and_chest_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 24_bicep_curl_and_chest_305x250.gif; sourceTree = "<group>"; };
+		F80049F61F9006CB00767A55 /* 25_champagne_cork_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 25_champagne_cork_305x250.gif; sourceTree = "<group>"; };
+		F80049F81F9006CB00767A55 /* 26_namaste_with_text_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 26_namaste_with_text_305x250.gif; sourceTree = "<group>"; };
+		F80049FA1F9006CB00767A55 /* 27_woman_lifting_shopping_bags_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 27_woman_lifting_shopping_bags_305x250.gif; sourceTree = "<group>"; };
+		F80049FC1F9006CB00767A55 /* 28_rock_n_roll_guitar_player_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 28_rock_n_roll_guitar_player_305x250.gif; sourceTree = "<group>"; };
+		F80049FE1F9006CB00767A55 /* 29_angry_face_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 29_angry_face_305x250.gif; sourceTree = "<group>"; };
+		F8004A001F9006CB00767A55 /* 3_Brutus_beating_head_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3_Brutus_beating_head_305x250.gif; sourceTree = "<group>"; };
+		F8004A011F9006CB00767A55 /* 3_Brutus_Touchdown_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3_Brutus_Touchdown_305x250.gif; sourceTree = "<group>"; };
+		F8004A031F9006CB00767A55 /* 30_knuckles_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 30_knuckles_305x250.gif; sourceTree = "<group>"; };
+		F8004A051F9006CB00767A55 /* 4_woman_drawing_guns_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4_woman_drawing_guns_305x250.gif; sourceTree = "<group>"; };
+		F8004A071F9006CB00767A55 /* 5_Neil_Sika_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 5_Neil_Sika_305x250.gif; sourceTree = "<group>"; };
+		F8004A091F9006CB00767A55 /* 6_iwo_jima_flag_raising_newmountain_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 6_iwo_jima_flag_raising_newmountain_305x250.gif; sourceTree = "<group>"; };
+		F8004A0B1F9006CB00767A55 /* 7_person_smoking_joint_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 7_person_smoking_joint_305x250.gif; sourceTree = "<group>"; };
+		F8004A0D1F9006CB00767A55 /* 8_basketball_3_point_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 8_basketball_3_point_305x250.gif; sourceTree = "<group>"; };
+		F8004A0E1F9006CB00767A55 /* 8_basketball_dunk_2_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 8_basketball_dunk_2_305x250.gif; sourceTree = "<group>"; };
+		F8004A101F9006CB00767A55 /* 9_basketball_official_FOUL_305x250txt.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9_basketball_official_FOUL_305x250txt.gif; sourceTree = "<group>"; };
+		F8004A111F9006CB00767A55 /* 9_NEW_basketball_foul_305x250.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 9_NEW_basketball_foul_305x250.gif; sourceTree = "<group>"; };
+		F8004A121F90073600767A55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8004A131F90074600767A55 /* Emotifont-Keyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Emotifont-Keyboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8004A141F9007A000767A55 /* Emotifont.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emotifont.entitlements; sourceTree = "<group>"; };
+		F8004A151F9007A400767A55 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F8004A171F9007F900767A55 /* Emotifont-Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Emotifont-Keyboard.entitlements"; sourceTree = "<group>"; };
+		F8692DB31F8FF5D5004E2F25 /* Emotifont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emotifont.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8692DB61F8FF5D5004E2F25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8692DB71F8FF5D5004E2F25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8692DBD1F8FF5D5004E2F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8692DBF1F8FF5D5004E2F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8692DC41F8FF5D5004E2F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8692DC51F8FF5D5004E2F25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDC32559C197B5561C00EDDC /* Pods_Emotifont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emotifont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8003B921F90026100767A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16B787D7A59C6FC1305D76A /* Pods_Emotifont_Keyboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8692DB01F8FF5D5004E2F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E60080A99D096E9CB8A884E /* Pods_Emotifont.framework in Frameworks */,
+				F8004A161F9007A400767A55 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2007B253C32DF3EA3A39451 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A151F9007A400767A55 /* StoreKit.framework */,
+				FDC32559C197B5561C00EDDC /* Pods_Emotifont.framework */,
+				2781AEE83F8B88BD50FFED75 /* Pods_Emotifont_Keyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7E55FECA0950A1096FA83B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBC257735F1597ADE15430A2 /* Pods-Emotifont.debug.xcconfig */,
+				E51FD8F78D5F6D97D1979C22 /* Pods-Emotifont.release.xcconfig */,
+				7BDAD91DBAC0EF17A1DAC395 /* Pods-Emotifont-Keyboard.debug.xcconfig */,
+				8A8D24E949A0B868F7702DA5 /* Pods-Emotifont-Keyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8003B961F90026100767A55 /* Emotifont-Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F8FCF4BD1F90B14B004AB8EC /* Common */,
+				F8FCF4C01F90B169004AB8EC /* Model */,
+				F8FCF4BE1F90B154004AB8EC /* View */,
+				F8FCF4BF1F90B15A004AB8EC /* Controller */,
+				F80049611F90066F00767A55 /* Resource */,
+				F8FCF4C31F90B24F004AB8EC /* Supply */,
+			);
+			path = "Emotifont-Keyboard";
+			sourceTree = "<group>";
+		};
+		F80042B91F90057B00767A55 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F800494E1F9005E800767A55 /* ASU.packbundle */,
+				F800494F1F9005E800767A55 /* ASU Baseball.pack */,
+				F80049461F9005E600767A55 /* ASU Basketball.pack */,
+				F800492E1F9005DF00767A55 /* ASU Campus.pack */,
+				F80049251F9005DD00767A55 /* ASU Football.pack */,
+				F80049271F9005DE00767A55 /* ASU Generic.pack */,
+				F800492F1F9005E000767A55 /* Angry.pack */,
+				F800494B1F9005E700767A55 /* Blessed.pack */,
+				F80049561F9005EB00767A55 /* Celebrate.pack */,
+				F80049581F9005EC00767A55 /* Cheers.pack */,
+				F800494D1F9005E800767A55 /* Duke.pack */,
+				F800491F1F9005DC00767A55 /* Falcons.pack */,
+				F800491E1F9005DC00767A55 /* Freaking Hilarious.pack */,
+				F800495B1F9005ED00767A55 /* Go Green.pack */,
+				F800492A1F9005DE00767A55 /* Happy.pack */,
+				F80049291F9005DE00767A55 /* Holiday.packbundle */,
+				F80049511F9005E900767A55 /* I Heart Music.pack */,
+				F80049431F9005E500767A55 /* I'm Serious.pack */,
+				F800493A1F9005E200767A55 /* Love.pack */,
+				F800494A1F9005E700767A55 /* Make It Rain.pack */,
+				F80049391F9005E200767A55 /* Make Your Own.pack */,
+				F80049331F9005E000767A55 /* Medical Marijuana.pack */,
+				F800493D1F9005E300767A55 /* Merry.pack */,
+				F800493B1F9005E300767A55 /* NC.pack */,
+				F800492D1F9005DF00767A55 /* New Year.pack */,
+				F80049371F9005E200767A55 /* Ohio State Academics.pack */,
+				F800495C1F9005ED00767A55 /* Ohio State Baseball.pack */,
+				F80049481F9005E600767A55 /* Ohio State Basketball.pack */,
+				F800493E1F9005E400767A55 /* Ohio State Buckeye.pack */,
+				F800493F1F9005E400767A55 /* Ohio State Campus.pack */,
+				F80049541F9005EA00767A55 /* Ohio State Football.pack */,
+				F80049381F9005E200767A55 /* Ohio State Golf.pack */,
+				F80049551F9005EA00767A55 /* Ohio State.packbundle */,
+				F800492C1F9005DF00767A55 /* Packers.pack */,
+				F80049321F9005E000767A55 /* Patriots.pack */,
+				F80049261F9005DD00767A55 /* Peace.pack */,
+				F800495A1F9005EC00767A55 /* Pride.pack */,
+				F80049341F9005E100767A55 /* Proud.pack */,
+				F80049441F9005E500767A55 /* Romance.pack */,
+				F80049201F9005DC00767A55 /* Sad.pack */,
+				F80049501F9005E900767A55 /* Scary.pack */,
+				F80049301F9005E000767A55 /* Shalom.pack */,
+				F80049361F9005E100767A55 /* Sick.pack */,
+				F800492B1F9005DF00767A55 /* SouthCarolina.pack */,
+				F80049401F9005E400767A55 /* Steelers.pack */,
+				F80049211F9005DC00767A55 /* Stressed Out.pack */,
+				F800494C1F9005E700767A55 /* Syracuse.packbundle */,
+				F80049531F9005EA00767A55 /* Syracuse Basketball.pack */,
+				F80049221F9005DD00767A55 /* Syracuse Campus.pack */,
+				F80049281F9005DE00767A55 /* Syracuse Football.pack */,
+				F80049231F9005DD00767A55 /* Syracuse Generic.pack */,
+				F80049351F9005E100767A55 /* Text Hug.pack */,
+				F80049571F9005EB00767A55 /* Thankful.pack */,
+				F80049451F9005E500767A55 /* Trending.packbundle */,
+				F80049521F9005E900767A55 /* Trump.pack */,
+				F80049471F9005E600767A55 /* UCLA.pack */,
+				F80049311F9005E000767A55 /* U of A.pack */,
+				F80049411F9005E400767A55 /* University of Illinois.packbundle */,
+				F80049491F9005E700767A55 /* University of Illinois Basketball.pack */,
+				F80049421F9005E500767A55 /* University of Illinois Campus.pack */,
+				F80049241F9005DD00767A55 /* University of Illinois Football.pack */,
+				F80049591F9005EC00767A55 /* University of Illinois Generic.pack */,
+				F800493C1F9005E300767A55 /* White Castle.pack */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		F80049611F90066F00767A55 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F80049BA1F9006CB00767A55 /* gif */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F80049BA1F9006CB00767A55 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				F80049BB1F9006CB00767A55 /* 1 The Fan */,
+				F80049BD1F9006CB00767A55 /* 10 football players */,
+				F80049C11F9006CB00767A55 /* 11 football refs */,
+				F80049CF1F9006CB00767A55 /* 12 soccer players */,
+				F80049D21F9006CB00767A55 /* 13 soccer refs */,
+				F80049D71F9006CB00767A55 /* 14 baseball players */,
+				F80049D91F9006CB00767A55 /* 15 baseball umps */,
+				F80049DD1F9006CB00767A55 /* 16 hockey players */,
+				F80049DF1F9006CB00767A55 /* 17 hockey refs */,
+				F80049E21F9006CB00767A55 /* 18 golf player */,
+				F80049E41F9006CB00767A55 /* 19 lacrosse players */,
+				F80049E61F9006CB00767A55 /* 2 Beers Cheers */,
+				F80049E91F9006CB00767A55 /* 20 skier */,
+				F80049EB1F9006CB00767A55 /* 21 Middle Finger - Flipping the Bird */,
+				F80049EE1F9006CB00767A55 /* 22 rock-n-roll hand symbol */,
+				F80049F01F9006CB00767A55 /* 23 applause - clapping hands */,
+				F80049F31F9006CB00767A55 /* 24 Bicep Curl */,
+				F80049F51F9006CB00767A55 /* 25 Champagne Cork Pop */,
+				F80049F71F9006CB00767A55 /* 26 Namaste - Yoga */,
+				F80049F91F9006CB00767A55 /* 27 Shopping Woman */,
+				F80049FB1F9006CB00767A55 /* 28 guitar player */,
+				F80049FD1F9006CB00767A55 /* 29 angry face */,
+				F80049FF1F9006CB00767A55 /* 3 brutus */,
+				F8004A021F9006CB00767A55 /* 30 knuckles */,
+				F8004A041F9006CB00767A55 /* 4 woman with guns - back off bitches */,
+				F8004A061F9006CB00767A55 /* 5 Drop The Mic */,
+				F8004A081F9006CB00767A55 /* 6 Soliders Raising Flag */,
+				F8004A0A1F9006CB00767A55 /* 7 toking a joint */,
+				F8004A0C1F9006CB00767A55 /* 8 basketball players */,
+				F8004A0F1F9006CB00767A55 /* 9 basketball refs */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
+		F80049BB1F9006CB00767A55 /* 1 The Fan */ = {
+			isa = PBXGroup;
+			children = (
+				F80049BC1F9006CB00767A55 /* 1_the_fanatic_305x250.gif */,
+			);
+			path = "1 The Fan";
+			sourceTree = "<group>";
+		};
+		F80049BD1F9006CB00767A55 /* 10 football players */ = {
+			isa = PBXGroup;
+			children = (
+				F80049BE1F9006CB00767A55 /* 10_football_CATCHING_PASS_305x250.gif */,
+				F80049BF1F9006CB00767A55 /* 10_football_PUNTING_305x250.gif */,
+				F80049C01F9006CB00767A55 /* 10_football_SPIKING_305x250.gif */,
+			);
+			path = "10 football players";
+			sourceTree = "<group>";
+		};
+		F80049C11F9006CB00767A55 /* 11 football refs */ = {
+			isa = PBXGroup;
+			children = (
+				F80049C21F9006CB00767A55 /* 11_1_delay_of_game_305x250txt.gif */,
+				F80049C31F9006CB00767A55 /* 11_1_first_down_305x250txt.gif */,
+				F80049C41F9006CB00767A55 /* 11_1_first_down_left_305x250txt.gif */,
+				F80049C51F9006CB00767A55 /* 11_1_illegal_use_of_hands_305x250txt.gif */,
+				F80049C61F9006CB00767A55 /* 11_1_incomplete_pass_305x250txt.gif */,
+				F80049C71F9006CB00767A55 /* 11_1_penalty_flag_305x250.gif */,
+				F80049C81F9006CB00767A55 /* 11_1_time_out_305x250txt.gif */,
+				F80049C91F9006CB00767A55 /* 11_1_touchdown_305x250txt.gif */,
+				F80049CA1F9006CB00767A55 /* 11_2_NEW_football_ref_DELAY_OF_GAME_305x250.gif */,
+				F80049CB1F9006CB00767A55 /* 11_2_NEW_football_ref_INCOMPLETE_PASS_305x250.gif */,
+				F80049CC1F9006CB00767A55 /* 11_2_NEW_football_ref_TIME_OUT_305x250.gif */,
+				F80049CD1F9006CB00767A55 /* 11_2_NEW_football_ref_yellow-flag_Updated_305x250.gif */,
+				F80049CE1F9006CB00767A55 /* 11_2_new_ref_TOUCHDOWN_305x250.gif */,
+			);
+			path = "11 football refs";
+			sourceTree = "<group>";
+		};
+		F80049CF1F9006CB00767A55 /* 12 soccer players */ = {
+			isa = PBXGroup;
+			children = (
+				F80049D01F9006CB00767A55 /* 12_soccer_corner_kick_305x250.gif */,
+				F80049D11F9006CB00767A55 /* 12_soccer_save_305x250.gif */,
+			);
+			path = "12 soccer players";
+			sourceTree = "<group>";
+		};
+		F80049D21F9006CB00767A55 /* 13 soccer refs */ = {
+			isa = PBXGroup;
+			children = (
+				F80049D31F9006CB00767A55 /* 13_1_Soccer_red_card_305x250.gif */,
+				F80049D41F9006CB00767A55 /* 13_1_Soccer_yellow_card_305x250.gif */,
+				F80049D51F9006CB00767A55 /* 13_2_NEW_soccer_red_card_Updated_305x250.gif */,
+				F80049D61F9006CB00767A55 /* 13_2_NEW_soccer_yellow_card_Updated_305x250.gif */,
+			);
+			path = "13 soccer refs";
+			sourceTree = "<group>";
+		};
+		F80049D71F9006CB00767A55 /* 14 baseball players */ = {
+			isa = PBXGroup;
+			children = (
+				F80049D81F9006CB00767A55 /* 14_baseball_home_run_305x250.gif */,
+			);
+			path = "14 baseball players";
+			sourceTree = "<group>";
+		};
+		F80049D91F9006CB00767A55 /* 15 baseball umps */ = {
+			isa = PBXGroup;
+			children = (
+				F80049DA1F9006CB00767A55 /* 15_baseball_official_OUT_305x250txt.gif */,
+				F80049DB1F9006CB00767A55 /* 15_Baseball_official_Strike_305x250txt.gif */,
+				F80049DC1F9006CB00767A55 /* 15_Baseball_safe_305x250txt.gif */,
+			);
+			path = "15 baseball umps";
+			sourceTree = "<group>";
+		};
+		F80049DD1F9006CB00767A55 /* 16 hockey players */ = {
+			isa = PBXGroup;
+			children = (
+				F80049DE1F9006CB00767A55 /* 16_hockey_slap_shot_305x250.gif */,
+			);
+			path = "16 hockey players";
+			sourceTree = "<group>";
+		};
+		F80049DF1F9006CB00767A55 /* 17 hockey refs */ = {
+			isa = PBXGroup;
+			children = (
+				F80049E01F9006CB00767A55 /* 17_Hockey_official_PENALTY_SHOT_305x250txt.gif */,
+				F80049E11F9006CB00767A55 /* 17_Hockey_official_UNSPORTSMANLIKE_305x250txt.gif */,
+			);
+			path = "17 hockey refs";
+			sourceTree = "<group>";
+		};
+		F80049E21F9006CB00767A55 /* 18 golf player */ = {
+			isa = PBXGroup;
+			children = (
+				F80049E31F9006CB00767A55 /* 18_golf_shank_305x250.gif */,
+			);
+			path = "18 golf player";
+			sourceTree = "<group>";
+		};
+		F80049E41F9006CB00767A55 /* 19 lacrosse players */ = {
+			isa = PBXGroup;
+			children = (
+				F80049E51F9006CB00767A55 /* 19_lacrosse_goal_305x250.gif */,
+			);
+			path = "19 lacrosse players";
+			sourceTree = "<group>";
+		};
+		F80049E61F9006CB00767A55 /* 2 Beers Cheers */ = {
+			isa = PBXGroup;
+			children = (
+				F80049E71F9006CB00767A55 /* 2_1_wine_toast_305x250.gif */,
+				F80049E81F9006CB00767A55 /* 2_Beer_cheers_305x250.gif */,
+			);
+			path = "2 Beers Cheers";
+			sourceTree = "<group>";
+		};
+		F80049E91F9006CB00767A55 /* 20 skier */ = {
+			isa = PBXGroup;
+			children = (
+				F80049EA1F9006CB00767A55 /* 20_skiing_305x250.gif */,
+			);
+			path = "20 skier";
+			sourceTree = "<group>";
+		};
+		F80049EB1F9006CB00767A55 /* 21 Middle Finger - Flipping the Bird */ = {
+			isa = PBXGroup;
+			children = (
+				F80049EC1F9006CB00767A55 /* 21_middle_finger_305x250.gif */,
+				F80049ED1F9006CB00767A55 /* 21_middle_finger_female_305x250.gif */,
+			);
+			path = "21 Middle Finger - Flipping the Bird";
+			sourceTree = "<group>";
+		};
+		F80049EE1F9006CB00767A55 /* 22 rock-n-roll hand symbol */ = {
+			isa = PBXGroup;
+			children = (
+				F80049EF1F9006CB00767A55 /* 22_rock_n_roll_hand_symbol_305x250.gif */,
+			);
+			path = "22 rock-n-roll hand symbol";
+			sourceTree = "<group>";
+		};
+		F80049F01F9006CB00767A55 /* 23 applause - clapping hands */ = {
+			isa = PBXGroup;
+			children = (
+				F80049F11F9006CB00767A55 /* 23_1_applause_305x250.gif */,
+				F80049F21F9006CB00767A55 /* 23_2_applause_slower_305x250.gif */,
+			);
+			path = "23 applause - clapping hands";
+			sourceTree = "<group>";
+		};
+		F80049F31F9006CB00767A55 /* 24 Bicep Curl */ = {
+			isa = PBXGroup;
+			children = (
+				F80049F41F9006CB00767A55 /* 24_bicep_curl_and_chest_305x250.gif */,
+			);
+			path = "24 Bicep Curl";
+			sourceTree = "<group>";
+		};
+		F80049F51F9006CB00767A55 /* 25 Champagne Cork Pop */ = {
+			isa = PBXGroup;
+			children = (
+				F80049F61F9006CB00767A55 /* 25_champagne_cork_305x250.gif */,
+			);
+			path = "25 Champagne Cork Pop";
+			sourceTree = "<group>";
+		};
+		F80049F71F9006CB00767A55 /* 26 Namaste - Yoga */ = {
+			isa = PBXGroup;
+			children = (
+				F80049F81F9006CB00767A55 /* 26_namaste_with_text_305x250.gif */,
+			);
+			path = "26 Namaste - Yoga";
+			sourceTree = "<group>";
+		};
+		F80049F91F9006CB00767A55 /* 27 Shopping Woman */ = {
+			isa = PBXGroup;
+			children = (
+				F80049FA1F9006CB00767A55 /* 27_woman_lifting_shopping_bags_305x250.gif */,
+			);
+			path = "27 Shopping Woman";
+			sourceTree = "<group>";
+		};
+		F80049FB1F9006CB00767A55 /* 28 guitar player */ = {
+			isa = PBXGroup;
+			children = (
+				F80049FC1F9006CB00767A55 /* 28_rock_n_roll_guitar_player_305x250.gif */,
+			);
+			path = "28 guitar player";
+			sourceTree = "<group>";
+		};
+		F80049FD1F9006CB00767A55 /* 29 angry face */ = {
+			isa = PBXGroup;
+			children = (
+				F80049FE1F9006CB00767A55 /* 29_angry_face_305x250.gif */,
+			);
+			path = "29 angry face";
+			sourceTree = "<group>";
+		};
+		F80049FF1F9006CB00767A55 /* 3 brutus */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A001F9006CB00767A55 /* 3_Brutus_beating_head_305x250.gif */,
+				F8004A011F9006CB00767A55 /* 3_Brutus_Touchdown_305x250.gif */,
+			);
+			path = "3 brutus";
+			sourceTree = "<group>";
+		};
+		F8004A021F9006CB00767A55 /* 30 knuckles */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A031F9006CB00767A55 /* 30_knuckles_305x250.gif */,
+			);
+			path = "30 knuckles";
+			sourceTree = "<group>";
+		};
+		F8004A041F9006CB00767A55 /* 4 woman with guns - back off bitches */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A051F9006CB00767A55 /* 4_woman_drawing_guns_305x250.gif */,
+			);
+			path = "4 woman with guns - back off bitches";
+			sourceTree = "<group>";
+		};
+		F8004A061F9006CB00767A55 /* 5 Drop The Mic */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A071F9006CB00767A55 /* 5_Neil_Sika_305x250.gif */,
+			);
+			path = "5 Drop The Mic";
+			sourceTree = "<group>";
+		};
+		F8004A081F9006CB00767A55 /* 6 Soliders Raising Flag */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A091F9006CB00767A55 /* 6_iwo_jima_flag_raising_newmountain_305x250.gif */,
+			);
+			path = "6 Soliders Raising Flag";
+			sourceTree = "<group>";
+		};
+		F8004A0A1F9006CB00767A55 /* 7 toking a joint */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A0B1F9006CB00767A55 /* 7_person_smoking_joint_305x250.gif */,
+			);
+			path = "7 toking a joint";
+			sourceTree = "<group>";
+		};
+		F8004A0C1F9006CB00767A55 /* 8 basketball players */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A0D1F9006CB00767A55 /* 8_basketball_3_point_305x250.gif */,
+				F8004A0E1F9006CB00767A55 /* 8_basketball_dunk_2_305x250.gif */,
+			);
+			path = "8 basketball players";
+			sourceTree = "<group>";
+		};
+		F8004A0F1F9006CB00767A55 /* 9 basketball refs */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A101F9006CB00767A55 /* 9_basketball_official_FOUL_305x250txt.gif */,
+				F8004A111F9006CB00767A55 /* 9_NEW_basketball_foul_305x250.gif */,
+			);
+			path = "9 basketball refs";
+			sourceTree = "<group>";
+		};
+		F8389B841F90B86700C47392 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F80042A21F90052E00767A55 /* PurchaseController.h */,
+				F80042A31F90052E00767A55 /* PurchaseController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8389B851F90B8C900C47392 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F80042B91F90057B00767A55 /* fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F8389B871F90B98400C47392 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F8389B891F90B9EC00C47392 /* Utility */,
+				F8389B881F90B9C700C47392 /* Global */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F8389B881F90B9C700C47392 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				F80034A51F8FFFE300767A55 /* Constant.h */,
+				F80049601F90063B00767A55 /* Emotifont-Prefix.pch */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		F8389B891F90B9EC00C47392 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F80042AD1F90055A00767A55 /* UIColor+LYSHexColor.h */,
+				F80042B41F90055C00767A55 /* UIColor+LYSHexColor.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F8692DAA1F8FF5D5004E2F25 = {
+			isa = PBXGroup;
+			children = (
+				F8692DB51F8FF5D5004E2F25 /* Emotifont */,
+				F8003B961F90026100767A55 /* Emotifont-Keyboard */,
+				F8FCF4C41F90B2AA004AB8EC /* Share */,
+				F8692DB41F8FF5D5004E2F25 /* Products */,
+				F7E55FECA0950A1096FA83B3 /* Pods */,
+				B2007B253C32DF3EA3A39451 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8692DB41F8FF5D5004E2F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8692DB31F8FF5D5004E2F25 /* Emotifont.app */,
+				F8003B951F90026100767A55 /* Emotifont-Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8692DB51F8FF5D5004E2F25 /* Emotifont */ = {
+			isa = PBXGroup;
+			children = (
+				F8FCF4BB1F90AD37004AB8EC /* Common */,
+				F8FCF4B71F90AC3B004AB8EC /* Model */,
+				F8FCF4B81F90AC4B004AB8EC /* View */,
+				F8FCF4B91F90AC53004AB8EC /* Controller */,
+				F8FCF4BA1F90AC60004AB8EC /* Resource */,
+				F8FCF4BC1F90AEEA004AB8EC /* Supply */,
+			);
+			path = Emotifont;
+			sourceTree = "<group>";
+		};
+		F8FCF4B71F90AC3B004AB8EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8FCF4B81F90AC4B004AB8EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8692DBC1F8FF5D5004E2F25 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8FCF4B91F90AC53004AB8EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8FCF4C51F90B367004AB8EC /* ViewController */,
+				F8692DB61F8FF5D5004E2F25 /* AppDelegate.h */,
+				F8692DB71F8FF5D5004E2F25 /* AppDelegate.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8FCF4BA1F90AC60004AB8EC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F8692DBF1F8FF5D5004E2F25 /* Assets.xcassets */,
+				F80034A41F8FFFE300767A55 /* privacy.html */,
+				F80034A61F8FFFE300767A55 /* tou.html */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F8FCF4BB1F90AD37004AB8EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F8FCF4BC1F90AEEA004AB8EC /* Supply */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A141F9007A000767A55 /* Emotifont.entitlements */,
+				F8692DC41F8FF5D5004E2F25 /* Info.plist */,
+				F80034A31F8FFFE200767A55 /* GoogleService-Info.plist */,
+				F8692DC51F8FF5D5004E2F25 /* main.m */,
+				F80034881F8FFEFA00767A55 /* Emotifont-Bridging-Header.h */,
+			);
+			path = Supply;
+			sourceTree = "<group>";
+		};
+		F8FCF4BD1F90B14B004AB8EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F800429F1F90050600767A55 /* MWFImageCropper.h */,
+				F80042A01F90050600767A55 /* MWFImageCropper.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F8FCF4BE1F90B154004AB8EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F800429D1F9004EA00767A55 /* FontPickerView.xib */,
+				F800429C1F9004EA00767A55 /* KeyboardInputView.xib */,
+				F800429E1F9004EB00767A55 /* KeyboardView.xib */,
+				F80042A81F90054300767A55 /* FontCell.xib */,
+				F80042A51F90054300767A55 /* GifCollectionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8FCF4BF1F90B15A004AB8EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8003B971F90026100767A55 /* KeyboardViewController.h */,
+				F8003B981F90026100767A55 /* KeyboardViewController.m */,
+				F80042961F9004C800767A55 /* FontPickerView.h */,
+				F80042941F9004C800767A55 /* FontPickerView.m */,
+				F80042951F9004C800767A55 /* KeyboardInputView.h */,
+				F80042971F9004C800767A55 /* KeyboardInputView.m */,
+				F80042931F9004C700767A55 /* KeyboardView.h */,
+				F80042981F9004C800767A55 /* KeyboardView.m */,
+				F80042A71F90054300767A55 /* FontCell.h */,
+				F80042A61F90054300767A55 /* FontCell.m */,
+				F80042A91F90054400767A55 /* GifCollectionCell.h */,
+				F80042AA1F90054400767A55 /* GifCollectionCell.m */,
+				F800495D1F90062500767A55 /* Compositor.h */,
+				F800495E1F90062500767A55 /* Compositor.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8FCF4C01F90B169004AB8EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8FCF4C31F90B24F004AB8EC /* Supply */ = {
+			isa = PBXGroup;
+			children = (
+				F8004A171F9007F900767A55 /* Emotifont-Keyboard.entitlements */,
+				F8003B9A1F90026100767A55 /* Info.plist */,
+				F8004A121F90073600767A55 /* GoogleService-Info.plist */,
+				F8004A131F90074600767A55 /* Emotifont-Keyboard-Bridging-Header.h */,
+			);
+			path = Supply;
+			sourceTree = "<group>";
+		};
+		F8FCF4C41F90B2AA004AB8EC /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				F8389B871F90B98400C47392 /* Common */,
+				F8FCF4C61F90B447004AB8EC /* Model */,
+				F8389B841F90B86700C47392 /* Controller */,
+				F8389B851F90B8C900C47392 /* Resource */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		F8FCF4C51F90B367004AB8EC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F800348B1F8FFEFB00767A55 /* AboutVC.swift */,
+				F80034901F8FFEFB00767A55 /* EmotifontViewController.swift */,
+				F80034911F8FFEFC00767A55 /* FirstViewController.h */,
+				F80034951F8FFEFC00767A55 /* FirstViewController.m */,
+				F800348F1F8FFEFB00767A55 /* LeaderboardVC.h */,
+				F800348D1F8FFEFB00767A55 /* LeaderboardVC.m */,
+				F800348E1F8FFEFB00767A55 /* MainNaviController.h */,
+				F80034891F8FFEFA00767A55 /* MainNaviController.m */,
+				F80034921F8FFEFC00767A55 /* PrivacyVC.swift */,
+				F80034931F8FFEFC00767A55 /* ProfileVC.swift */,
+				F800348C1F8FFEFB00767A55 /* PurchaseConfirmVC.h */,
+				F80034941F8FFEFC00767A55 /* PurchaseConfirmVC.m */,
+				F800348A1F8FFEFB00767A55 /* TermsOfUse.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F8FCF4C61F90B447004AB8EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F80042B31F90055C00767A55 /* GlyphPack.h */,
+				F80042B21F90055B00767A55 /* GlyphPack.m */,
+				F80042B11F90055B00767A55 /* GlyphPackBundle.h */,
+				F80042AF1F90055A00767A55 /* GlyphPackBundle.m */,
+				F80042AE1F90055A00767A55 /* Pack.h */,
+				F80042B01F90055B00767A55 /* Pack.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8003B941F90026100767A55 /* Emotifont-Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8003BA01F90026100767A55 /* Build configuration list for PBXNativeTarget "Emotifont-Keyboard" */;
+			buildPhases = (
+				F09352A6C4C23D8E456DAA4F /* [CP] Check Pods Manifest.lock */,
+				F8003B911F90026100767A55 /* Sources */,
+				F8003B921F90026100767A55 /* Frameworks */,
+				F8003B931F90026100767A55 /* Resources */,
+				F3AF078CEFE0D46C016E9379 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emotifont-Keyboard";
+			productName = "Emotifont-Keyboard";
+			productReference = F8003B951F90026100767A55 /* Emotifont-Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F8692DB21F8FF5D5004E2F25 /* Emotifont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8692DC91F8FF5D5004E2F25 /* Build configuration list for PBXNativeTarget "Emotifont" */;
+			buildPhases = (
+				6893BDFA50D01EB1FFC8FBD8 /* [CP] Check Pods Manifest.lock */,
+				F8692DAF1F8FF5D5004E2F25 /* Sources */,
+				F8692DB01F8FF5D5004E2F25 /* Frameworks */,
+				F8692DB11F8FF5D5004E2F25 /* Resources */,
+				CB50AAEB580E5DED820B4C2F /* [CP] Embed Pods Frameworks */,
+				55466DE19EF07AABFA8FA2B6 /* [CP] Copy Pods Resources */,
+				F80034871F8FFB2500767A55 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8003B9C1F90026100767A55 /* PBXTargetDependency */,
+			);
+			name = Emotifont;
+			productName = Emotifont;
+			productReference = F8692DB31F8FF5D5004E2F25 /* Emotifont.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8692DAB1F8FF5D5004E2F25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Ricardo;
+				TargetAttributes = {
+					F8003B941F90026100767A55 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					F8692DB21F8FF5D5004E2F25 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F8692DAE1F8FF5D5004E2F25 /* Build configuration list for PBXProject "Emotifont" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8692DAA1F8FF5D5004E2F25;
+			productRefGroup = F8692DB41F8FF5D5004E2F25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8692DB21F8FF5D5004E2F25 /* Emotifont */,
+				F8003B941F90026100767A55 /* Emotifont-Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8003B931F90026100767A55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85EA6591F9025A00017EC5F /* FontCell.xib in Resources */,
+				F85EA65A1F9025A00017EC5F /* GifCollectionCell.xib in Resources */,
+				F85EA65B1F9025A00017EC5F /* GoogleService-Info.plist in Resources */,
+				F85EA5DD1F90256F0017EC5F /* Assets.xcassets in Resources */,
+				F85EA5DE1F90256F0017EC5F /* 1_the_fanatic_305x250.gif in Resources */,
+				F85EA5DF1F90256F0017EC5F /* 10_football_CATCHING_PASS_305x250.gif in Resources */,
+				F85EA5E01F90256F0017EC5F /* 10_football_PUNTING_305x250.gif in Resources */,
+				F85EA5E11F90256F0017EC5F /* 10_football_SPIKING_305x250.gif in Resources */,
+				F85EA5E21F90256F0017EC5F /* 11_1_delay_of_game_305x250txt.gif in Resources */,
+				F85EA5E31F90256F0017EC5F /* 11_1_first_down_305x250txt.gif in Resources */,
+				F85EA5E41F90256F0017EC5F /* 11_1_first_down_left_305x250txt.gif in Resources */,
+				F85EA5E51F90256F0017EC5F /* 11_1_illegal_use_of_hands_305x250txt.gif in Resources */,
+				F85EA5E61F90256F0017EC5F /* 11_1_incomplete_pass_305x250txt.gif in Resources */,
+				F85EA5E71F90256F0017EC5F /* 11_1_penalty_flag_305x250.gif in Resources */,
+				F85EA5E81F90256F0017EC5F /* 11_1_time_out_305x250txt.gif in Resources */,
+				F85EA5E91F90256F0017EC5F /* 11_1_touchdown_305x250txt.gif in Resources */,
+				F85EA5EA1F90256F0017EC5F /* 11_2_NEW_football_ref_DELAY_OF_GAME_305x250.gif in Resources */,
+				F85EA5EB1F90256F0017EC5F /* 11_2_NEW_football_ref_INCOMPLETE_PASS_305x250.gif in Resources */,
+				F85EA5EC1F90256F0017EC5F /* 11_2_NEW_football_ref_TIME_OUT_305x250.gif in Resources */,
+				F85EA5ED1F90256F0017EC5F /* 11_2_NEW_football_ref_yellow-flag_Updated_305x250.gif in Resources */,
+				F85EA5EE1F90256F0017EC5F /* 11_2_new_ref_TOUCHDOWN_305x250.gif in Resources */,
+				F85EA5EF1F90256F0017EC5F /* 12_soccer_corner_kick_305x250.gif in Resources */,
+				F85EA5F01F90256F0017EC5F /* 12_soccer_save_305x250.gif in Resources */,
+				F85EA5F11F90256F0017EC5F /* 13_1_Soccer_red_card_305x250.gif in Resources */,
+				F85EA5F21F90256F0017EC5F /* 13_1_Soccer_yellow_card_305x250.gif in Resources */,
+				F85EA5F31F90256F0017EC5F /* 13_2_NEW_soccer_red_card_Updated_305x250.gif in Resources */,
+				F85EA5F41F90256F0017EC5F /* 13_2_NEW_soccer_yellow_card_Updated_305x250.gif in Resources */,
+				F85EA5F51F90256F0017EC5F /* 14_baseball_home_run_305x250.gif in Resources */,
+				F85EA5F61F90256F0017EC5F /* 15_baseball_official_OUT_305x250txt.gif in Resources */,
+				F85EA5F71F90256F0017EC5F /* 15_Baseball_official_Strike_305x250txt.gif in Resources */,
+				F85EA5F81F90256F0017EC5F /* 15_Baseball_safe_305x250txt.gif in Resources */,
+				F85EA5F91F90256F0017EC5F /* 16_hockey_slap_shot_305x250.gif in Resources */,
+				F85EA5FA1F90256F0017EC5F /* 17_Hockey_official_PENALTY_SHOT_305x250txt.gif in Resources */,
+				F85EA5FB1F90256F0017EC5F /* 17_Hockey_official_UNSPORTSMANLIKE_305x250txt.gif in Resources */,
+				F85EA5FC1F90256F0017EC5F /* 18_golf_shank_305x250.gif in Resources */,
+				F85EA5FD1F90256F0017EC5F /* 19_lacrosse_goal_305x250.gif in Resources */,
+				F85EA5FE1F9025700017EC5F /* 2_1_wine_toast_305x250.gif in Resources */,
+				F85EA5FF1F9025700017EC5F /* 2_Beer_cheers_305x250.gif in Resources */,
+				F85EA6001F9025700017EC5F /* 20_skiing_305x250.gif in Resources */,
+				F85EA6011F9025700017EC5F /* 21_middle_finger_305x250.gif in Resources */,
+				F85EA6021F9025700017EC5F /* 21_middle_finger_female_305x250.gif in Resources */,
+				F85EA6031F9025700017EC5F /* 22_rock_n_roll_hand_symbol_305x250.gif in Resources */,
+				F85EA6041F9025700017EC5F /* 23_1_applause_305x250.gif in Resources */,
+				F85EA6051F9025700017EC5F /* 23_2_applause_slower_305x250.gif in Resources */,
+				F85EA6061F9025700017EC5F /* 24_bicep_curl_and_chest_305x250.gif in Resources */,
+				F85EA6071F9025700017EC5F /* 25_champagne_cork_305x250.gif in Resources */,
+				F85EA6081F9025700017EC5F /* 26_namaste_with_text_305x250.gif in Resources */,
+				F85EA6091F9025700017EC5F /* 27_woman_lifting_shopping_bags_305x250.gif in Resources */,
+				F85EA60A1F9025700017EC5F /* 28_rock_n_roll_guitar_player_305x250.gif in Resources */,
+				F85EA60B1F9025700017EC5F /* 29_angry_face_305x250.gif in Resources */,
+				F85EA60C1F9025700017EC5F /* 3_Brutus_beating_head_305x250.gif in Resources */,
+				F85EA60D1F9025700017EC5F /* 3_Brutus_Touchdown_305x250.gif in Resources */,
+				F85EA60E1F9025700017EC5F /* 30_knuckles_305x250.gif in Resources */,
+				F85EA60F1F9025700017EC5F /* 4_woman_drawing_guns_305x250.gif in Resources */,
+				F85EA6101F9025700017EC5F /* 5_Neil_Sika_305x250.gif in Resources */,
+				F85EA6111F9025700017EC5F /* 6_iwo_jima_flag_raising_newmountain_305x250.gif in Resources */,
+				F85EA6121F9025700017EC5F /* 7_person_smoking_joint_305x250.gif in Resources */,
+				F85EA6131F9025700017EC5F /* 8_basketball_3_point_305x250.gif in Resources */,
+				F85EA6141F9025700017EC5F /* 8_basketball_dunk_2_305x250.gif in Resources */,
+				F85EA6151F9025700017EC5F /* 9_basketball_official_FOUL_305x250txt.gif in Resources */,
+				F85EA6161F9025700017EC5F /* 9_NEW_basketball_foul_305x250.gif in Resources */,
+				F85EA6171F9025700017EC5F /* ASU.packbundle in Resources */,
+				F85EA6181F9025700017EC5F /* ASU Baseball.pack in Resources */,
+				F85EA6191F9025700017EC5F /* ASU Basketball.pack in Resources */,
+				F85EA61A1F9025700017EC5F /* ASU Campus.pack in Resources */,
+				F85EA61B1F9025700017EC5F /* ASU Football.pack in Resources */,
+				F85EA61C1F9025700017EC5F /* ASU Generic.pack in Resources */,
+				F85EA61D1F9025700017EC5F /* Angry.pack in Resources */,
+				F85EA61E1F9025700017EC5F /* Blessed.pack in Resources */,
+				F85EA61F1F9025700017EC5F /* Celebrate.pack in Resources */,
+				F85EA6201F9025700017EC5F /* Cheers.pack in Resources */,
+				F85EA6211F9025700017EC5F /* Duke.pack in Resources */,
+				F85EA6221F9025700017EC5F /* Falcons.pack in Resources */,
+				F85EA6231F9025700017EC5F /* Freaking Hilarious.pack in Resources */,
+				F85EA6241F9025700017EC5F /* Go Green.pack in Resources */,
+				F85EA6251F9025700017EC5F /* Happy.pack in Resources */,
+				F85EA6261F9025700017EC5F /* Holiday.packbundle in Resources */,
+				F85EA6271F9025700017EC5F /* I Heart Music.pack in Resources */,
+				F85EA6281F9025700017EC5F /* I'm Serious.pack in Resources */,
+				F85EA6291F9025700017EC5F /* Love.pack in Resources */,
+				F85EA62A1F9025700017EC5F /* Make It Rain.pack in Resources */,
+				F85EA62B1F9025700017EC5F /* Make Your Own.pack in Resources */,
+				F85EA62C1F9025700017EC5F /* Medical Marijuana.pack in Resources */,
+				F85EA62D1F9025700017EC5F /* Merry.pack in Resources */,
+				F85EA62E1F9025700017EC5F /* NC.pack in Resources */,
+				F85EA62F1F9025700017EC5F /* New Year.pack in Resources */,
+				F85EA6301F9025700017EC5F /* Ohio State Academics.pack in Resources */,
+				F85EA6311F9025700017EC5F /* Ohio State Baseball.pack in Resources */,
+				F85EA6321F9025700017EC5F /* Ohio State Basketball.pack in Resources */,
+				F85EA6331F9025700017EC5F /* Ohio State Buckeye.pack in Resources */,
+				F85EA6341F9025700017EC5F /* Ohio State Campus.pack in Resources */,
+				F85EA6351F9025700017EC5F /* Ohio State Football.pack in Resources */,
+				F85EA6361F9025700017EC5F /* Ohio State Golf.pack in Resources */,
+				F85EA6371F9025700017EC5F /* Ohio State.packbundle in Resources */,
+				F85EA6381F9025700017EC5F /* Packers.pack in Resources */,
+				F85EA6391F9025700017EC5F /* Patriots.pack in Resources */,
+				F85EA63A1F9025700017EC5F /* Peace.pack in Resources */,
+				F85EA63B1F9025700017EC5F /* Pride.pack in Resources */,
+				F85EA63C1F9025700017EC5F /* Proud.pack in Resources */,
+				F85EA63D1F9025700017EC5F /* Romance.pack in Resources */,
+				F85EA63E1F9025700017EC5F /* Sad.pack in Resources */,
+				F85EA63F1F9025700017EC5F /* Scary.pack in Resources */,
+				F85EA6401F9025700017EC5F /* Shalom.pack in Resources */,
+				F85EA6411F9025700017EC5F /* Sick.pack in Resources */,
+				F85EA6421F9025700017EC5F /* SouthCarolina.pack in Resources */,
+				F85EA6431F9025700017EC5F /* Steelers.pack in Resources */,
+				F85EA6441F9025700017EC5F /* Stressed Out.pack in Resources */,
+				F85EA6451F9025700017EC5F /* Syracuse.packbundle in Resources */,
+				F85EA6461F9025700017EC5F /* Syracuse Basketball.pack in Resources */,
+				F85EA6471F9025700017EC5F /* Syracuse Campus.pack in Resources */,
+				F85EA6481F9025700017EC5F /* Syracuse Football.pack in Resources */,
+				F85EA6491F9025700017EC5F /* Syracuse Generic.pack in Resources */,
+				F85EA64A1F9025700017EC5F /* Text Hug.pack in Resources */,
+				F85EA64B1F9025700017EC5F /* Thankful.pack in Resources */,
+				F85EA64C1F9025700017EC5F /* Trending.packbundle in Resources */,
+				F85EA64D1F9025700017EC5F /* Trump.pack in Resources */,
+				F85EA64E1F9025700017EC5F /* UCLA.pack in Resources */,
+				F85EA64F1F9025700017EC5F /* U of A.pack in Resources */,
+				F85EA6501F9025700017EC5F /* University of Illinois.packbundle in Resources */,
+				F85EA6511F9025700017EC5F /* University of Illinois Basketball.pack in Resources */,
+				F85EA6521F9025700017EC5F /* University of Illinois Campus.pack in Resources */,
+				F85EA6531F9025700017EC5F /* University of Illinois Football.pack in Resources */,
+				F85EA6541F9025700017EC5F /* University of Illinois Generic.pack in Resources */,
+				F85EA6551F9025700017EC5F /* White Castle.pack in Resources */,
+				F85EA6561F9025700017EC5F /* FontPickerView.xib in Resources */,
+				F85EA6571F9025700017EC5F /* KeyboardInputView.xib in Resources */,
+				F85EA6581F9025700017EC5F /* KeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8692DB11F8FF5D5004E2F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85EA59E1F9024E00017EC5F /* ASU.packbundle in Resources */,
+				F85EA59F1F9024E00017EC5F /* ASU Baseball.pack in Resources */,
+				F85EA5A01F9024E00017EC5F /* ASU Basketball.pack in Resources */,
+				F85EA5A11F9024E00017EC5F /* ASU Campus.pack in Resources */,
+				F85EA5A21F9024E00017EC5F /* ASU Football.pack in Resources */,
+				F85EA5A31F9024E00017EC5F /* ASU Generic.pack in Resources */,
+				F85EA5A41F9024E00017EC5F /* Angry.pack in Resources */,
+				F85EA5A51F9024E00017EC5F /* Blessed.pack in Resources */,
+				F85EA5A61F9024E00017EC5F /* Celebrate.pack in Resources */,
+				F85EA5A71F9024E00017EC5F /* Cheers.pack in Resources */,
+				F85EA5A81F9024E00017EC5F /* Duke.pack in Resources */,
+				F85EA5A91F9024E00017EC5F /* Falcons.pack in Resources */,
+				F85EA5AA1F9024E00017EC5F /* Freaking Hilarious.pack in Resources */,
+				F85EA5AB1F9024E00017EC5F /* Go Green.pack in Resources */,
+				F85EA5AC1F9024E00017EC5F /* Happy.pack in Resources */,
+				F85EA5AD1F9024E00017EC5F /* Holiday.packbundle in Resources */,
+				F85EA5AE1F9024E00017EC5F /* I Heart Music.pack in Resources */,
+				F85EA5AF1F9024E00017EC5F /* I'm Serious.pack in Resources */,
+				F85EA5B01F9024E00017EC5F /* Love.pack in Resources */,
+				F85EA5B11F9024E00017EC5F /* Make It Rain.pack in Resources */,
+				F85EA5B21F9024E00017EC5F /* Make Your Own.pack in Resources */,
+				F85EA5B31F9024E00017EC5F /* Medical Marijuana.pack in Resources */,
+				F85EA5B41F9024E00017EC5F /* Merry.pack in Resources */,
+				F85EA5B51F9024E00017EC5F /* NC.pack in Resources */,
+				F85EA5B61F9024E00017EC5F /* New Year.pack in Resources */,
+				F85EA5B71F9024E00017EC5F /* Ohio State Academics.pack in Resources */,
+				F85EA5B81F9024E00017EC5F /* Ohio State Baseball.pack in Resources */,
+				F85EA5B91F9024E00017EC5F /* Ohio State Basketball.pack in Resources */,
+				F85EA5BA1F9024E00017EC5F /* Ohio State Buckeye.pack in Resources */,
+				F85EA5BB1F9024E00017EC5F /* Ohio State Campus.pack in Resources */,
+				F85EA5BC1F9024E00017EC5F /* Ohio State Football.pack in Resources */,
+				F85EA5BD1F9024E00017EC5F /* Ohio State Golf.pack in Resources */,
+				F85EA5BE1F9024E00017EC5F /* Ohio State.packbundle in Resources */,
+				F85EA5BF1F9024E00017EC5F /* Packers.pack in Resources */,
+				F85EA5C01F9024E00017EC5F /* Patriots.pack in Resources */,
+				F85EA5C11F9024E00017EC5F /* Peace.pack in Resources */,
+				F85EA5C21F9024E00017EC5F /* Pride.pack in Resources */,
+				F85EA5C31F9024E00017EC5F /* Proud.pack in Resources */,
+				F85EA5C41F9024E00017EC5F /* Romance.pack in Resources */,
+				F85EA5C51F9024E00017EC5F /* Sad.pack in Resources */,
+				F85EA5C61F9024E00017EC5F /* Scary.pack in Resources */,
+				F85EA5C71F9024E00017EC5F /* Shalom.pack in Resources */,
+				F85EA5C81F9024E00017EC5F /* Sick.pack in Resources */,
+				F85EA5C91F9024E00017EC5F /* SouthCarolina.pack in Resources */,
+				F85EA5CA1F9024E00017EC5F /* Steelers.pack in Resources */,
+				F85EA5CB1F9024E00017EC5F /* Stressed Out.pack in Resources */,
+				F85EA5CC1F9024E00017EC5F /* Syracuse.packbundle in Resources */,
+				F85EA5CD1F9024E00017EC5F /* Syracuse Basketball.pack in Resources */,
+				F85EA5CE1F9024E00017EC5F /* Syracuse Campus.pack in Resources */,
+				F85EA5CF1F9024E00017EC5F /* Syracuse Football.pack in Resources */,
+				F85EA5D01F9024E00017EC5F /* Syracuse Generic.pack in Resources */,
+				F85EA5D11F9024E00017EC5F /* Text Hug.pack in Resources */,
+				F85EA5D21F9024E00017EC5F /* Thankful.pack in Resources */,
+				F85EA5D31F9024E00017EC5F /* Trending.packbundle in Resources */,
+				F85EA5D41F9024E00017EC5F /* Trump.pack in Resources */,
+				F85EA5D51F9024E00017EC5F /* UCLA.pack in Resources */,
+				F85EA5D61F9024E00017EC5F /* U of A.pack in Resources */,
+				F85EA5D71F9024E00017EC5F /* University of Illinois.packbundle in Resources */,
+				F85EA5D81F9024E00017EC5F /* University of Illinois Basketball.pack in Resources */,
+				F85EA5D91F9024E00017EC5F /* University of Illinois Campus.pack in Resources */,
+				F85EA5DA1F9024E00017EC5F /* University of Illinois Football.pack in Resources */,
+				F85EA5DB1F9024E00017EC5F /* University of Illinois Generic.pack in Resources */,
+				F85EA5DC1F9024E00017EC5F /* White Castle.pack in Resources */,
+				F85EA59A1F9024D40017EC5F /* Main.storyboard in Resources */,
+				F85EA59B1F9024D40017EC5F /* GoogleService-Info.plist in Resources */,
+				F85EA59C1F9024D40017EC5F /* privacy.html in Resources */,
+				F85EA59D1F9024D40017EC5F /* tou.html in Resources */,
+				F8692DC01F8FF5D5004E2F25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55466DE19EF07AABFA8FA2B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emotifont/Pods-Emotifont-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6893BDFA50D01EB1FFC8FBD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Emotifont-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB50AAEB580E5DED820B4C2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Emotifont/Pods-Emotifont-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emotifont/Pods-Emotifont-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F09352A6C4C23D8E456DAA4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Emotifont-Keyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3AF078CEFE0D46C016E9379 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emotifont-Keyboard/Pods-Emotifont-Keyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8003B911F90026100767A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80042B61F90055C00767A55 /* Pack.m in Sources */,
+				F80042AC1F90054400767A55 /* GifCollectionCell.m in Sources */,
+				F8003B991F90026100767A55 /* KeyboardViewController.m in Sources */,
+				F80042AB1F90054400767A55 /* FontCell.m in Sources */,
+				F80042B81F90055C00767A55 /* UIColor+LYSHexColor.m in Sources */,
+				F800429B1F9004C800767A55 /* KeyboardView.m in Sources */,
+				F800495F1F90062600767A55 /* Compositor.m in Sources */,
+				F80042A11F90050600767A55 /* MWFImageCropper.m in Sources */,
+				F80042991F9004C800767A55 /* FontPickerView.m in Sources */,
+				F80042A41F90052E00767A55 /* PurchaseController.m in Sources */,
+				F800429A1F9004C800767A55 /* KeyboardInputView.m in Sources */,
+				F80042B71F90055C00767A55 /* GlyphPack.m in Sources */,
+				F80042B51F90055C00767A55 /* GlyphPackBundle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8692DAF1F8FF5D5004E2F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8004A1A1F900DBE00767A55 /* GlyphPack.m in Sources */,
+				F8004A1B1F900DBE00767A55 /* GlyphPackBundle.m in Sources */,
+				F8FCF4C21F90B205004AB8EC /* MWFImageCropper.m in Sources */,
+				F8389B861F90B96100C47392 /* PurchaseController.m in Sources */,
+				F8004A1C1F900DBE00767A55 /* Pack.m in Sources */,
+				F800349E1F8FFEFC00767A55 /* FirstViewController.m in Sources */,
+				F80034971F8FFEFC00767A55 /* TermsOfUse.swift in Sources */,
+				F800349B1F8FFEFC00767A55 /* PrivacyVC.swift in Sources */,
+				F80034981F8FFEFC00767A55 /* AboutVC.swift in Sources */,
+				F800349C1F8FFEFC00767A55 /* ProfileVC.swift in Sources */,
+				F800349A1F8FFEFC00767A55 /* EmotifontViewController.swift in Sources */,
+				F80034991F8FFEFC00767A55 /* LeaderboardVC.m in Sources */,
+				F800349D1F8FFEFC00767A55 /* PurchaseConfirmVC.m in Sources */,
+				F80034961F8FFEFC00767A55 /* MainNaviController.m in Sources */,
+				F8692DC61F8FF5D5004E2F25 /* main.m in Sources */,
+				F8FCF4C11F90B205004AB8EC /* UIColor+LYSHexColor.m in Sources */,
+				F8692DB81F8FF5D5004E2F25 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8003B9C1F90026100767A55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8003B941F90026100767A55 /* Emotifont-Keyboard */;
+			targetProxy = F8003B9B1F90026100767A55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8692DBC1F8FF5D5004E2F25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8692DBD1F8FF5D5004E2F25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8003B9E1F90026100767A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BDAD91DBAC0EF17A1DAC395 /* Pods-Emotifont-Keyboard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Emotifont-Keyboard/Supply/Emotifont-Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MW68H4H7G;
+				GCC_PREFIX_HEADER = "Share/Common/Global/Emotifont-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Emotifont-Keyboard/Supply/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.emotifontkb.emotifont-keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8003B9F1F90026100767A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A8D24E949A0B868F7702DA5 /* Pods-Emotifont-Keyboard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Emotifont-Keyboard/Supply/Emotifont-Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MW68H4H7G;
+				GCC_PREFIX_HEADER = "Share/Common/Global/Emotifont-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Emotifont-Keyboard/Supply/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.emotifontkb.emotifont-keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8692DC71F8FF5D5004E2F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8692DC81F8FF5D5004E2F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8692DCA1F8FF5D5004E2F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC257735F1597ADE15430A2 /* Pods-Emotifont.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Emotifont/Supply/Emotifont.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MW68H4H7G;
+				GCC_PREFIX_HEADER = "Share/Common/Global/Emotifont-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Emotifont/Supply/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.emotifontkb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Emotifont/Supply/Emotifont-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F8692DCB1F8FF5D5004E2F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E51FD8F78D5F6D97D1979C22 /* Pods-Emotifont.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Emotifont/Supply/Emotifont.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2MW68H4H7G;
+				GCC_PREFIX_HEADER = "Share/Common/Global/Emotifont-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Emotifont/Supply/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.emotifontkb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Emotifont/Supply/Emotifont-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8003BA01F90026100767A55 /* Build configuration list for PBXNativeTarget "Emotifont-Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8003B9E1F90026100767A55 /* Debug */,
+				F8003B9F1F90026100767A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8692DAE1F8FF5D5004E2F25 /* Build configuration list for PBXProject "Emotifont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8692DC71F8FF5D5004E2F25 /* Debug */,
+				F8692DC81F8FF5D5004E2F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8692DC91F8FF5D5004E2F25 /* Build configuration list for PBXNativeTarget "Emotifont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8692DCA1F8FF5D5004E2F25 /* Debug */,
+				F8692DCB1F8FF5D5004E2F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8692DAB1F8FF5D5004E2F25 /* Project object */;
+}
